@@ -2,27 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 import { translations, type Lang } from '../i18n/translations';
 
-// Default to 'en' for the root URL
-const lang: Lang = 'en';
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: Lang };
 const t = translations[lang];
 const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
-const canonical = 'https://relocatepa.com';
+const otherLang = lang === 'en' ? 'es' : 'en';
+const isEn = lang === 'en';
+const base = isEn ? '' : `/${lang}`;
+const canonical = isEn ? 'https://relocatepa.com' : `https://relocatepa.com/${lang}`;
 ---
 
 <Layout title={t.meta_title} description={t.meta_description} lang={lang} canonical={canonical}>
 
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+      <a href={`${base}/#hero`} class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="nav-logo-img"></a>
       <div class="nav-links" id="navLinks">
-        <a href="#why-panama" data-i18n="nav_why">{t.nav_why}</a>
-        <a href="#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
-        <a href="#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
-        <a href="#services" data-i18n="nav_services">{t.nav_services}</a>
-        <a href="#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
+        <a href={`${base}/#why-panama`} data-i18n="nav_why">{t.nav_why}</a>
+        <a href={`${base}/#visa-programs`} data-i18n="nav_visa">{t.nav_visa}</a>
+        <a href={`${base}/#legal`} data-i18n="nav_legal">{t.nav_legal}</a>
+        <a href={`${base}/#services`} data-i18n="nav_services">{t.nav_services}</a>
+        <a href={`${base}/#contact`} class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
-          <a href="/en" class="lang-btn active">EN</a>
-          <a href="/es" class="lang-btn">ES</a>
+          <a href="/" class={`lang-btn ${lang === 'en' ? 'active' : ''}`} id="langEN">EN</a>
+          <a href="/es" class={`lang-btn ${lang === 'es' ? 'active' : ''}`} id="langES">ES</a>
         </div>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -42,49 +51,8 @@ const canonical = 'https://relocatepa.com';
       </h1>
       <p class="hero-subtitle" data-i18n="hero_subtitle">{t.hero_subtitle}</p>
       <div class="hero-buttons">
-        <a href="#visa-programs" class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
-        <a href="#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
-      </div>
-      <p class="trust-phrase" data-i18n="trust_phrase">{t.trust_phrase}</p>
-    </div>
-  </section>
-
-  <section class="corp-section" id="corporations">
-    <div class="container">
-      <h2 class="section-title animate-on-scroll" data-i18n="corp_title">{t.corp_title}</h2>
-      <p class="section-label animate-on-scroll" data-i18n="corp_subtitle">{t.corp_subtitle}</p>
-      <p class="section-desc animate-on-scroll" data-i18n="corp_desc">{t.corp_desc}</p>
-      
-      <div class="visa-grid">
-        <div class="visa-card animate-on-scroll" style="grid-column: 1 / -1;">
-          <div class="visa-card-header" style="background: var(--text-dark)">
-            <h3 data-i18n="corp_ben_title">{t.corp_ben_title}</h3>
-          </div>
-          <div class="visa-card-body">
-            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-              <div>
-                <h4 data-i18n="corp_ben1_title" style="color: var(--emerald); margin-bottom: 8px;">{t.corp_ben1_title}</h4>
-                <p data-i18n="corp_ben1_desc">{t.corp_ben1_desc}</p>
-              </div>
-              <div>
-                <h4 data-i18n="corp_ben2_title" style="color: var(--emerald); margin-bottom: 8px;">{t.corp_ben2_title}</h4>
-                <p data-i18n="corp_ben2_desc">{t.corp_ben2_desc}</p>
-              </div>
-              <div>
-                <h4 data-i18n="corp_ben3_title" style="color: var(--emerald); margin-bottom: 8px;">{t.corp_ben3_title}</h4>
-                <p data-i18n="corp_ben3_desc">{t.corp_ben3_desc}</p>
-              </div>
-              <div>
-                <h4 data-i18n="corp_ben4_title" style="color: var(--emerald); margin-bottom: 8px;">{t.corp_ben4_title}</h4>
-                <p data-i18n="corp_ben4_desc">{t.corp_ben4_desc}</p>
-              </div>
-              <div>
-                <h4 data-i18n="corp_ben5_title" style="color: var(--emerald); margin-bottom: 8px;">{t.corp_ben5_title}</h4>
-                <p data-i18n="corp_ben5_desc">{t.corp_ben5_desc}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href={`/${lang}#visa-programs`} class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
+        <a href={`/${lang}#why-panama`} class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
     </div>
   </section>
@@ -294,13 +262,6 @@ const canonical = 'https://relocatepa.com';
         </div>
 
       </div>
-
-      <div class="re-closings animate-on-scroll" style="margin-top: 80px; background: var(--bg-cream); padding: 50px; border-radius: var(--border-radius);">
-        <div class="container" style="padding: 0;">
-          <h2 class="section-title" data-i18n="re_title" style="text-align: left; margin-bottom: 24px;">{t.re_title}</h2>
-          <p data-i18n="re_desc">{t.re_desc}</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -380,28 +341,9 @@ const canonical = 'https://relocatepa.com';
           </p>
         </div>
       </div>
-      <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener" data-i18n="contact_cta">{t.contact_cta}</a>
-
-      <div class="contact-form-container animate-on-scroll" id="contact-form">
-        <form action="https://formspree.io/f/Larissa_cuadra@yahoo.com" method="POST">
-          <div class="form-group">
-            <label for="name" data-i18n="contact_form_name">{t.contact_form_name}</label>
-            <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
-          </div>
-          <div class="form-group">
-            <label for="email" data-i18n="contact_form_email">{t.contact_form_email}</label>
-            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
-          </div>
-          <div class="form-group">
-            <label for="phone" data-i18n="contact_form_phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+507 6674-3696">
-          </div>
-          <div class="form-group">
-            <label for="message" data-i18n="contact_form_msg">{t.contact_form_msg}</label>
-            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="How can we help you?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact_form_btn">{t.contact_form_btn}</button>
-        </form>
+      <div class="hero-buttons">
+        <a href={`${base}/#visa-programs`} class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
+        <a href={`${base}/#why-panama`} class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
     </div>
   </section>
@@ -410,15 +352,15 @@ const canonical = 'https://relocatepa.com';
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="footer-logo-img"></a>
+          <a href={`${base}/#hero`} class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="footer-logo-img"></a>
           <p data-i18n="footer_tagline">{t.footer_tagline}</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_nav">{t.footer_nav}</h4>
-          <a href="#why-panama">{t.nav_why}</a>
-          <a href="#visa-programs">{t.nav_visa}</a>
-          <a href="#legal">{t.nav_legal}</a>
-          <a href="#services">{t.nav_services}</a>
+          <a href={`${base}/#why-panama`}>{t.nav_why}</a>
+          <a href={`${base}/#visa-programs`}>{t.nav_visa}</a>
+          <a href={`${base}/#legal`}>{t.nav_legal}</a>
+          <a href={`${base}/#services`}>{t.nav_services}</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_contact">{t.footer_contact}</h4>
@@ -436,16 +378,7 @@ const canonical = 'https://relocatepa.com';
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer_copy">{t.footer_copy}</p>
-        <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-          <h4 style="color: var(--sand); margin-bottom: 10px;">PANAMA ATTORNEYS AT LAW</h4>
-          <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">LARISSA CUADRA</p>
-          <p style="opacity: 0.8; font-size: 0.9rem; margin-bottom: 15px;">Attorney At Law & Real Estate Broker</p>
-          <p style="font-size: 0.95rem;">USA: <a href="tel:+17864257319" style="display: inline; color: #fff;">(786)425-7319</a> | PTY: <a href="tel:+50766743696" style="display: inline; color: #fff;">(507)6674-3696</a></p>
-        </div>
-        <div class="footer-banner">
-          <img src="/images/panama-banner.jpg" alt="Panama Legal & Lifestyle">
-        </div>
-        <p data-i18n="footer_legal" style="margin-top: 30px; opacity: 0.6;">{t.footer_legal}</p>
+        <p data-i18n="footer_legal">{t.footer_legal}</p>
       </div>
     </div>
   </footer>

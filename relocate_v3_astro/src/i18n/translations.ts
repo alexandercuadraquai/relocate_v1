@@ -1,7 +1,9 @@
 export const translations = {
   en: {
+    meta_title: "Relocate to Panama | Panama Residency, Visas & Legal Support",
+    meta_description: "The official guide to relocate to Panama. Expert legal assistance for Residency Visas, friendly nations visa, pensionado visa, banking, and starting a new life in Panama.",
     nav_why: "Why Panama", nav_visa: "Visa Options", nav_legal: "Legal Info",
-    nav_services: "Services", nav_contact: "Contact Us",
+    nav_services: "Services", nav_contact: "Contact Us", nav_corp: "Corporations",
 
     hero_label: "YOUR NEW LIFE AWAITS",
     hero_title_1: "Relocate to", hero_title_2: "Panama",
@@ -9,7 +11,7 @@ export const translations = {
     hero_btn_visa: "Explore Visa Options", hero_btn_why: "Why Panama?",
 
     why_label: "DISCOVER PARADISE", why_title: "Why Panama?",
-    why_desc: "A unique blend of modern infrastructure, natural beauty, and investor-friendly policies.",
+    why_desc: "A unique blend of modern infrastructure, natural beauty, and investor-friendly policies for those looking to relocate to Panama.",
     why_climate_title: "Perfect Climate",
     why_climate_desc: "Enjoy warm tropical weather year-round with temperatures between 24°C and 32°C (75°F - 90°F). No hurricanes, no extreme cold — just sunshine and ocean breezes.",
     why_economy_title: "Booming Economy",
@@ -102,11 +104,34 @@ export const translations = {
     footer_nav: "Navigation", footer_contact: "Contact", footer_social: "Follow Us",
     footer_copy: "© 2026 RelocatePanama. All rights reserved.",
     footer_legal: "This website is for informational purposes only.",
-    wa_text: "Hello,%20I%20would%20like%20to%20schedule%20a%20free%2015-minute%20consultation"
+    wa_text: "Hello,%20I%20would%20like%20to%20schedule%20a%20free%2015-minute%20consultation",
+
+    trust_phrase: "Your trusted partner to start a new life in the ideal destination.",
+    
+    corp_title: "Panama Corporations / Foundations / Bank Accounts",
+    corp_subtitle: "The ideal solution for international business",
+    corp_desc: "Establishing a corporation in Panama with a corporate bank account is one of the most effective strategies for entrepreneurs, investors, and professionals seeking tax efficiency, asset protection, and access to the global financial system.",
+    corp_ben_title: "KEY BENEFITS",
+    corp_ben1_title: "Tax Advantages", corp_ben1_desc: "Taxes are only paid on income generated within Panama.",
+    corp_ben2_title: "International Banking", corp_ben2_desc: "Global transfers and USD management.",
+    corp_ben3_title: "Asset Protection", corp_ben3_desc: "Separation between personal, family, and business assets.",
+    corp_ben4_title: "Global Business", corp_ben4_desc: "Ideal for international trade and digital services.",
+    corp_ben5_title: "Flexibility", corp_ben5_desc: "No residency required; operate from any country.",
+
+    re_title: "Real Estate Closings in Panama",
+    re_desc: "We provide comprehensive legal support for real estate closings in Panama, ensuring every transaction is handled efficiently, securely, and in full compliance with local regulations. Our team manages the entire process—from due diligence and contract review to coordination with banks, escrow agents, and public registries—protecting your interests at every stage. Whether you are buying, selling, or investing, we deliver a smooth and transparent closing experience tailored to both local and international clients.",
+    
+    contact_form_name: "Full Name",
+    contact_form_email: "Email Address",
+    contact_form_msg: "Your Message",
+    contact_form_btn: "Send Message",
+    contact_form_success: "Thank you! Your message has been sent."
   },
   es: {
+    meta_title: "Mudarse a Panamá: Residencia, Visas e Inversión",
+    meta_description: "Asesoría legal experta en visas de residencia, banca, formación de empresas y establecimiento en Panamá. Más de 20 años de experiencia.",
     nav_why: "¿Por qué Panamá?", nav_visa: "Opciones de Visa", nav_legal: "Info Legal",
-    nav_services: "Servicios", nav_contact: "Contáctenos",
+    nav_services: "Servicios", nav_contact: "Contáctenos", nav_corp: "Sociedades",
     
     hero_label: "TU NUEVA VIDA TE ESPERA",
     hero_title_1: "Múdate a", hero_title_2: "Panamá",
@@ -114,7 +139,7 @@ export const translations = {
     hero_btn_visa: "Explorar Opciones de Visa", hero_btn_why: "¿Por qué Panamá?",
     
     why_label: "DESCUBRE EL PARAÍSO", why_title: "¿Por qué Panamá?",
-    why_desc: "Una combinación única de infraestructura moderna, belleza natural y políticas favorables para inversores.",
+    why_desc: "Una combinación única de infraestructura moderna, belleza natural y políticas favorables para quienes buscan mudarse a Panamá.",
     why_climate_title: "Clima Perfecto",
     why_climate_desc: "Disfruta del clima tropical cálido durante todo el año con temperaturas entre 24°C y 32°C (75°F - 90°F). Sin huracanes, sin frío extremo — solo sol y brisas marinas.",
     why_economy_title: "Economía en Auge",
@@ -207,7 +232,28 @@ export const translations = {
     footer_nav: "Navegación", footer_contact: "Contacto", footer_social: "Síguenos",
     footer_copy: "© 2026 RelocatePanama. Todos los derechos reservados.",
     footer_legal: "Este sitio web es solo con fines informativos.",
-    wa_text: "Hola,%20me%20gustar%C3%ADa%20agendar%20la%20consulta%20gratuita%20de%2015%20minutos"
+    wa_text: "Hola,%20me%20gustar%C3%ADa%20agendar%20la%20consulta%20gratuita%20de%2015%20minutos",
+
+    trust_phrase: "Tu aliado de confianza para comenzar una nueva vida en el destino ideal.",
+    
+    corp_title: "Sociedad Panameña / Fundaciones / Cuenta Bancaria",
+    corp_subtitle: "La solución ideal para negocios internacionales",
+    corp_desc: "Establecer una sociedad en Panamá con una cuenta bancaria corporativa es una de las estrategias más utilizadas por empresarios, inversionistas y profesionales que buscan eficiencia fiscal, protección patrimonial y acceso al sistema financiero global.",
+    corp_ben_title: "BENEFICIOS CLAVE",
+    corp_ben1_title: "Ventajas fiscales", corp_ben1_desc: "Solo se pagan impuestos por ingresos generados en Panamá.",
+    corp_ben2_title: "Banca internacional", corp_ben2_desc: "Transferencias globales y manejo en USD.",
+    corp_ben3_title: "Protección de activos", corp_ben3_desc: "Separación entre patrimonio personal, familiar y empresarial.",
+    corp_ben4_title: "Negocios globales", corp_ben4_desc: "Ideal para comercio internacional y servicios digitales.",
+    corp_ben5_title: "Flexibilidad", corp_ben5_desc: "No requiere residencia y permite operar desde cualquier país.",
+
+    re_title: "Cierres de Bienes Raíces en Panamá",
+    re_desc: "Brindamos apoyo legal integral para cierres de bienes raíces en Panamá, asegurando que cada transacción se maneje de manera eficiente, segura y en pleno cumplimiento de las regulaciones locales. Nuestro equipo gestiona todo el proceso, desde la debida diligencia y revisión de contratos hasta la coordinación con bancos, agentes de custodia (escrow) y registros públicos, protegiendo sus intereses en cada etapa. Ya sea que esté comprando, vendiendo o invirtiendo, ofrecemos una experiencia de cierre fluida y transparente adaptada a clientes locales e internacionales.",
+    
+    contact_form_name: "Nombre Completo",
+    contact_form_email: "Correo Electrónico",
+    contact_form_msg: "Tu Mensaje",
+    contact_form_btn: "Enviar Mensaje",
+    contact_form_success: "¡Gracias! Tu mensaje ha sido enviado."
   }
 } as const;
 

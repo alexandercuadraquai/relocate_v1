@@ -5,9 +5,46 @@ interface Props {
   title: string;
   description: string;
   lang?: string;
+  canonical?: string;
+  image?: string;
 }
 
-const { title, description, lang = 'en' } = Astro.props;
+const { 
+  title, 
+  description, 
+  lang = 'en', 
+  canonical = 'https://relocatepa.com', 
+  image = '/images/logo-transparent.png' 
+} = Astro.props;
+
+// Basic structured data for a Professional Service
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Relocate to Panama",
+  "url": "https://relocatepa.com",
+  "logo": "https://relocatepa.com/images/logo-transparent.png",
+  "sameAs": [
+    "https://www.instagram.com/Relocate2pa"
+  ]
+};
+
+const legalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Relocate to Panama",
+  "url": "https://relocatepa.com",
+  "logo": "https://relocatepa.com/images/logo.png",
+  "description": description,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Tercera Perejil, Edificio Elena",
+    "addressLocality": "Ciudad de Panamá",
+    "addressCountry": "PA"
+  },
+  "telephone": "+507 6674-3696",
+  "priceRange": "$$"
+};
 ---
 
 <!DOCTYPE html>
@@ -15,13 +52,45 @@ const { title, description, lang = 'en' } = Astro.props;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
   <title>{title}</title>
+  <meta name="title" content={title}>
   <meta name="description" content={description}>
   
-  <!-- Modern Fonts for V3 -->
+  <link rel="canonical" href={canonical}>
+  <link rel="alternate" hreflang="en" href="https://relocatepa.com" />
+  <link rel="alternate" hreflang="es" href="https://relocatepa.com/es" />
+  <link rel="alternate" hreflang="x-default" href="https://relocatepa.com" />
+  
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonical}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={image}>
+  <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'es_PA'}>
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content={canonical}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+  <meta property="twitter:image" content={image}>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/images/logo-transparent.png" />
+
+  <!-- Preconnect and Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(legalServiceSchema)} />
 </head>
 <body>
   <slot />

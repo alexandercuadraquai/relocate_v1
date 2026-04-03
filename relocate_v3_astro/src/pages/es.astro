@@ -1,28 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { translations, type Lang } from '../i18n/translations';
+import { translations } from '../i18n/translations';
 
-// Default to 'en' for the root URL
-const lang: Lang = 'en';
+const lang = 'es';
 const t = translations[lang];
 const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
-const canonical = 'https://relocatepa.com';
+const canonical = `https://relocatepa.com/es`;
 ---
 
 <Layout title={t.meta_title} description={t.meta_description} lang={lang} canonical={canonical}>
 
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+      <a href="/es#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="nav-logo-img"></a>
       <div class="nav-links" id="navLinks">
-        <a href="#why-panama" data-i18n="nav_why">{t.nav_why}</a>
-        <a href="#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
-        <a href="#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
-        <a href="#services" data-i18n="nav_services">{t.nav_services}</a>
-        <a href="#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
+        <a href="/es#why-panama" data-i18n="nav_why">{t.nav_why}</a>
+        <a href="/es#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
+        <a href="/es#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
+        <a href="/es#services" data-i18n="nav_services">{t.nav_services}</a>
+        <a href="/es#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
-          <a href="/en" class="lang-btn active">EN</a>
-          <a href="/es" class="lang-btn">ES</a>
+          <a href="/" class="lang-btn">EN</a>
+          <a href="/es" class="lang-btn active">ES</a>
         </div>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -42,8 +41,8 @@ const canonical = 'https://relocatepa.com';
       </h1>
       <p class="hero-subtitle" data-i18n="hero_subtitle">{t.hero_subtitle}</p>
       <div class="hero-buttons">
-        <a href="#visa-programs" class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
-        <a href="#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
+        <a href="/es#visa-programs" class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
+        <a href="/es#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
       <p class="trust-phrase" data-i18n="trust_phrase">{t.trust_phrase}</p>
     </div>
@@ -386,19 +385,19 @@ const canonical = 'https://relocatepa.com';
         <form action="https://formspree.io/f/Larissa_cuadra@yahoo.com" method="POST">
           <div class="form-group">
             <label for="name" data-i18n="contact_form_name">{t.contact_form_name}</label>
-            <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+            <input type="text" id="name" name="name" class="form-control" required placeholder="Nombre">
           </div>
           <div class="form-group">
             <label for="email" data-i18n="contact_form_email">{t.contact_form_email}</label>
-            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+            <input type="email" id="email" name="email" class="form-control" required placeholder="correo@ejemplo.com">
           </div>
           <div class="form-group">
-            <label for="phone" data-i18n="contact_form_phone">Phone Number</label>
+            <label for="phone" data-i18n="contact_form_phone">Número de Teléfono</label>
             <input type="tel" id="phone" name="phone" class="form-control" placeholder="+507 6674-3696">
           </div>
           <div class="form-group">
             <label for="message" data-i18n="contact_form_msg">{t.contact_form_msg}</label>
-            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="How can we help you?"></textarea>
+            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="¿Cómo podemos ayudarte?"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact_form_btn">{t.contact_form_btn}</button>
         </form>
@@ -410,15 +409,15 @@ const canonical = 'https://relocatepa.com';
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="footer-logo-img"></a>
+          <a href="/es#hero" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="footer-logo-img"></a>
           <p data-i18n="footer_tagline">{t.footer_tagline}</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_nav">{t.footer_nav}</h4>
-          <a href="#why-panama">{t.nav_why}</a>
-          <a href="#visa-programs">{t.nav_visa}</a>
-          <a href="#legal">{t.nav_legal}</a>
-          <a href="#services">{t.nav_services}</a>
+          <a href="/es#why-panama">{t.nav_why}</a>
+          <a href="/es#visa-programs">{t.nav_visa}</a>
+          <a href="/es#legal">{t.nav_legal}</a>
+          <a href="/es#services">{t.nav_services}</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_contact">{t.footer_contact}</h4>
