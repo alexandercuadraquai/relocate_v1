@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { translations } from '../i18n/translations';
+
+const t = translations['es'];
+---
+
+<Layout title="¡Gracias! | Relocate to Panama" description="Gracias por su consulta." lang="es">
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="/es" class="nav-logo"><img src="/images/logo-transparent.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+      <div class="nav-links">
+        <a href="/es" class="nav-cta">Volver al Inicio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 24px;">
+    <div class="container" style="max-width: 600px;">
+      <div style="font-size: 5rem; margin-bottom: 24px;">📧</div>
+      <h1 style="font-size: 3rem; margin-bottom: 24px; color: var(--text-dark);">¡Muchas Gracias!</h1>
+      <p style="font-size: 1.25rem; color: var(--text-body); margin-bottom: 40px;">
+        Su mensaje ha sido enviado correctamente. Nuestro equipo legal se pondrá en contacto con usted muy pronto.
+      </p>
+      <a href="/es" class="btn btn-primary">Volver a la Página Principal</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="text-align: center;">
+      <p>© 2026 RelocatePanama. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</Layout>

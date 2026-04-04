@@ -382,7 +382,8 @@ const canonical = `https://relocatepa.com/es`;
       <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener" data-i18n="contact_cta">{t.contact_cta}</a>
 
       <div class="contact-form-container animate-on-scroll" id="contact-form">
-        <form action="https://formspree.io/f/Larissa_cuadra@yahoo.com" method="POST">
+        <form action="https://formspree.io/f/mzdkjnoz" method="POST">
+          <input type="hidden" name="_next" value="https://relocatepa.com/gracias">
           <div class="form-group">
             <label for="name" data-i18n="contact_form_name">{t.contact_form_name}</label>
             <input type="text" id="name" name="name" class="form-control" required placeholder="Nombre">
@@ -402,6 +403,12 @@ const canonical = `https://relocatepa.com/es`;
           <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact_form_btn">{t.contact_form_btn}</button>
         </form>
       </div>
+    </div>
+  </section>
+
+  <section class="final-banner-section">
+    <div class="banner-container">
+      <img src="/images/panama-banner.jpg" alt="Relocate to Panama">
     </div>
   </section>
 
@@ -428,23 +435,23 @@ const canonical = `https://relocatepa.com/es`;
         <div class="footer-col">
           <h4 data-i18n="footer_social">{t.footer_social}</h4>
           <div class="social-links">
-            <a href="https://www.instagram.com/Relocate2pa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-            <a href="https://wa.me/50766743696" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="https://www.instagram.com/Relocate2pa" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/50766743696" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-13.8 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
+            </a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer_copy">{t.footer_copy}</p>
-        <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-          <h4 style="color: var(--sand); margin-bottom: 10px;">PANAMA ATTORNEYS AT LAW</h4>
-          <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">LARISSA CUADRA</p>
-          <p style="opacity: 0.8; font-size: 0.9rem; margin-bottom: 15px;">Attorney At Law & Real Estate Broker</p>
-          <p style="font-size: 0.95rem;">USA: <a href="tel:+17864257319" style="display: inline; color: #fff;">(786)425-7319</a> | PTY: <a href="tel:+50766743696" style="display: inline; color: #fff;">(507)6674-3696</a></p>
+        <div style="margin: 0 0 30px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 30px;">
+          <h4 style="color: var(--emerald); margin-bottom: 5px; font-size: 0.95rem; letter-spacing: 1px; font-family: var(--font-heading);">ABOGADOS EN PANAMÁ</h4>
+          <p style="opacity: 0.8; font-size: 1.16rem; margin-bottom: 20px; color: var(--text-body); font-weight: 500;">Abogada y Corredora de Bienes Raíces</p>
+          <p style="font-size: 1rem; color: var(--text-dark);">USA: <a href="tel:+17864257319" style="display: inline; color: var(--emerald); font-weight: 600;">(786) 425-7319</a> | PTY: <a href="tel:+50766743696" style="display: inline; color: var(--emerald); font-weight: 600;">(507) 6674-3696</a></p>
         </div>
-        <div class="footer-banner">
-          <img src="/images/panama-banner.jpg" alt="Panama Legal & Lifestyle">
-        </div>
-        <p data-i18n="footer_legal" style="margin-top: 30px; opacity: 0.6;">{t.footer_legal}</p>
+        <p data-i18n="footer_legal" style="margin-bottom: 25px; opacity: 0.6; font-size: 0.8rem;">{t.footer_legal}</p>
+        <p data-i18n="footer_copy" style="opacity: 0.8; font-size: 0.85rem; font-weight: 500;">{t.footer_copy}</p>
       </div>
     </div>
   </footer>
