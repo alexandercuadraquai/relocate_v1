@@ -82,7 +82,7 @@ h1, h2, h3, h4, .nav-logo {
 .navbar .container { display: flex; justify-content: space-between; align-items: center; }
 
 .nav-logo-img {
-  height: 80px; width: auto; transition: all 0.3s;
+  height: 100px; width: auto; transition: all 0.3s;
 }
 
 .nav-links { display: flex; align-items: center; gap: 32px; }
