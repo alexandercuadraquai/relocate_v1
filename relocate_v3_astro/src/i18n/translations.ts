@@ -128,18 +128,18 @@ export const translations = {
     contact_form_success: "Thank you! Your message has been sent."
   },
   es: {
-    meta_title: "Mudarse a Panamá: Residencia, Visas e Inversión",
+    meta_title: "Tu Nueva Vida en Panamá: Residencia, Visas e Inversión",
     meta_description: "Asesoría legal experta en visas de residencia, banca, formación de empresas y establecimiento en Panamá. Más de 20 años de experiencia.",
     nav_why: "¿Por qué Panamá?", nav_visa: "Opciones de Visa", nav_legal: "Info Legal",
     nav_services: "Servicios", nav_contact: "Contáctenos", nav_corp: "Sociedades",
     
     hero_label: "TU NUEVA VIDA TE ESPERA",
-    hero_title_1: "Múdate a", hero_title_2: "Panamá",
+    hero_title_1: "Tu Nueva", hero_title_2: "Vida en Panamá",
     hero_subtitle: "Descubre por qué miles de jubilados, inversores y emprendedores eligen Panamá como su nuevo hogar — con incentivos de clase mundial, belleza tropical y una economía en auge.",
     hero_btn_visa: "Explorar Opciones de Visa", hero_btn_why: "¿Por qué Panamá?",
     
     why_label: "DESCUBRE EL PARAÍSO", why_title: "¿Por qué Panamá?",
-    why_desc: "Una combinación única de infraestructura moderna, belleza natural y políticas favorables para quienes buscan mudarse a Panamá.",
+    why_desc: "Una combinación única de infraestructura moderna, belleza natural y políticas favorables para quienes buscan comenzar su nueva vida en Panamá.",
     why_climate_title: "Clima Perfecto",
     why_climate_desc: "Disfruta del clima tropical cálido durante todo el año con temperaturas entre 24°C y 32°C (75°F - 90°F). Sin huracanes, sin frío extremo — solo sol y brisas marinas.",
     why_economy_title: "Economía en Auge",
@@ -210,14 +210,14 @@ export const translations = {
     disclaimer_title: "Aviso Legal Importante", disclaimer_text: "La información proporcionada en esta página es solo con fines informativos generales y no constituye asesoría legal. Las leyes de inmigración y fiscales están sujetas a cambios. Recomendamos consultar con nuestro equipo legal calificado para discutir su situación específica y obtener orientación personalizada.",
 
     services_label: "LO QUE HACEMOS", services_title: "Nuestros Servicios",
-    services_desc: "Más de 20 años de experiencia legal ayudando a personas y empresas a mudarse a Panamá. Nosotros manejamos la complejidad para que puedas enfocarte en tu nueva vida.",
+    services_desc: "Más de 20 años de experiencia legal ayudando a personas y empresas a establecerse en Panamá. Nosotros manejamos la complejidad para que puedas enfocarte en tu nueva vida.",
     svc1_title: "Residencia y Visas", svc1_desc: "Visas de Inversionista, Visa de Naciones Amigas, Visa de Pensionado, Visa de Nómada Digital, Permisos de Trabajo, Reunificación Familiar — cubrimos todas las vías migratorias.",
     svc2_title: "Formación de Empresas", svc2_desc: "Corporaciones Panameñas (S.A.), subsidiarias, estructuras de protección patrimonial, Fundaciones de Interés Privado, apertura de cuentas bancarias y licencias comerciales.",
     svc3_title: "Impuestos y Cumplimiento Fiscal", svc3_desc: "Planificación fiscal personalizada, tratados fiscales internacionales, estructuras de optimización de ingresos y cumplimiento total con los requisitos contables panameños.",
     svc4_title: "Gestión de Activos y Propiedades", svc4_desc: "Compra de bienes raíces, debida diligencia legal, estructuración de propiedades a través de corporaciones o fundaciones, registro de vehículos y planificación sucesoria.",
 
     faq_label: "PREGUNTAS FRECUENTES", faq_title: "Preguntas Frecuentes",
-    faq_desc: "Respuestas claras a las preguntas más comunes sobre mudarse a Panamá.",
+    faq_desc: "Respuestas claras a las preguntas más comunes sobre tu nueva vida en Panamá.",
     faq1_q: "¿Solo pago impuestos en Panamá si mi empresa está registrada aquí?", faq1_a: "Depende de tu actividad, lugar de residencia fiscal y convenios de doble tributación aplicables. Evaluamos tu caso para ofrecerte la mejor estrategia.",
     faq2_q: "¿Puedo mantener el anonimato como accionista o director?", faq2_a: "La legislación panameña permite el uso de directores nominales y estructuras fiduciarias, aunque la transparencia internacional y normas AML deben ser consideradas.",
     faq3_q: "¿Cuánto tarda el proceso de residencia permanente?", faq3_a: "Los plazos varían entre 3 y 6 meses, dependiendo del tipo de visa y la preparación de la documentación.",
@@ -228,7 +228,7 @@ export const translations = {
     contact_hq: "Sede Principal", contact_phone_label: "Teléfono y WhatsApp", contact_email_label: "Email y Redes",
     contact_cta: "Reservar Consulta Gratuita por WhatsApp",
 
-    footer_tagline: "Tu socio de confianza para mudarte a Panamá. Más de 20 años de experiencia legal ayudando a personas a comenzar su nueva vida.",
+    footer_tagline: "Tu socio de confianza para comenzar tu nueva vida en Panamá. Más de 20 años de experiencia legal ayudando a personas a comenzar su nueva etapa.",
     footer_nav: "Navegación", footer_contact: "Contacto", footer_social: "Síguenos",
     footer_copy: "© 2026 RelocatePanama. Todos los derechos reservados.",
     footer_legal: "Este sitio web es solo con fines informativos.",
