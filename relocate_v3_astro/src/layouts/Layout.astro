@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { translations } from '../i18n/translations';
 
 interface Props {
   title: string;
@@ -91,6 +92,44 @@ const legalServiceSchema = {
   <!-- Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(legalServiceSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": translations[lang].faq1_q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": translations[lang].faq1_a
+        }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq2_q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": translations[lang].faq2_a
+        }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq3_q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": translations[lang].faq3_a
+        }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq4_q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": translations[lang].faq4_a
+        }
+      }
+    ]
+  })} />
 </head>
 <body>
   <slot />
