@@ -1,7 +1,7 @@
 export const translations = {
   en: {
-    meta_title: "Relocate to Panama | Panama Residency, Visas & Legal Support",
-    meta_description: "The official guide to relocate to Panama. Expert legal assistance for Residency Visas, friendly nations visa, pensionado visa, banking, and starting a new life in Panama.",
+    meta_title: "Relocate to Panama | Immigration Lawyers & Residency Visas",
+    meta_description: "Panama immigration attorneys with 20+ years experience. Pensionado Visa, Friendly Nations Visa, corporations & real estate closings. Free 15-min consultation.",
     nav_why: "Why Panama", nav_visa: "Visa Options", nav_legal: "Legal Info",
     nav_services: "Services", nav_contact: "Contact Us", nav_corp: "Corporations",
 
@@ -94,10 +94,15 @@ export const translations = {
     faq2_q: "Can I remain anonymous as a shareholder or director?", faq2_a: "Panamanian law allows the use of nominee directors and fiduciary structures, although international transparency and AML standards must be followed.",
     faq3_q: "How long does it take to obtain permanent residency?", faq3_a: "Processing times range from 3 to 6 months, depending on the visa type and documentation readiness.",
     faq4_q: "Can foreigners buy property in Panama?", faq4_a: "Yes, foreigners can buy property almost anywhere in the country (except restricted border zones). Property ownership rights are the same as for citizens.",
+    faq5_q: "What are the tax benefits of living in Panama?", faq5_a: "Panama uses a territorial tax system — only income earned inside Panama is taxed. Foreign pensions, dividends, remote work income, and capital gains from abroad are completely tax-free for residents.",
+    faq6_q: "Can I open a bank account in Panama as a foreigner?", faq6_a: "Yes. With the right documentation (passport, proof of income, references, and a valid Panamanian residency), foreigners can open personal and corporate bank accounts at major Panamanian banks. Our team guides you through the entire process.",
+    faq7_q: "What is the Digital Nomad Visa in Panama?", faq7_a: "Panama's Short Stay Visa for Remote Workers allows digital nomads to live in Panama for up to 9 months while working remotely for foreign companies. Requirements include proof of remote employment or freelance income and health insurance.",
+    faq8_q: "How much money do I need to retire in Panama?", faq8_a: "With the Pensionado Visa you need a minimum pension of $1,000/month. Living costs in Panama City range from $1,500–$2,500/month for a comfortable lifestyle, making it one of the most affordable retirement destinations in the Americas.",
 
     contact_label: "GET IN TOUCH", contact_title: "Contact Us",
     contact_desc: "Book your free 15-minute consultation. Tell us about your situation, and we'll show you your best options.",
     contact_hq: "Headquarters", contact_phone_label: "Phone & WhatsApp", contact_email_label: "Email & Social",
+    contact_phone: "Phone & WhatsApp", contact_email: "Email & Social",
     contact_cta: "Book Free Consultation via WhatsApp",
     
     footer_tagline: "Your trusted partner for relocating to Panama. Over 20 years of legal expertise helping people start their new life.",
@@ -107,6 +112,30 @@ export const translations = {
     wa_text: "Hello,%20I%20would%20like%20to%20schedule%20a%20free%2015-minute%20consultation",
 
     trust_phrase: "Your trusted partner to start a new life in the ideal destination.",
+
+    stat1_number: "20+", stat1_label: "Years of Experience",
+    stat2_number: "200+", stat2_label: "Families Relocated",
+    stat3_number: "+10", stat3_label: "Countries Served",
+    stat4_number: "4", stat4_label: "Visa Programs",
+
+    hiw_label: "THE PROCESS", hiw_title: "Start Your Panama Journey in 3 Simple Steps",
+    hiw_desc: "From your first consultation to receiving your residency card — we handle every detail.",
+    hiw1_num: "01", hiw1_title: "Free 15-Min Consultation",
+    hiw1_desc: "Tell us your goals, nationality, and finances. We identify the best visa path and outline the exact steps for your case.",
+    hiw2_num: "02", hiw2_title: "We Prepare Your Case",
+    hiw2_desc: "Our attorneys gather and authenticate documents, file all paperwork, and manage every step with immigration authorities.",
+    hiw3_num: "03", hiw3_title: "Welcome to Panama",
+    hiw3_desc: "Receive your residency card and start your new life. We stay available for banking, real estate, and any follow-up needs.",
+    hiw_cta: "Book Your Free Consultation",
+
+    testimonials_label: "CLIENT STORIES", testimonials_title: "Real People, Real Results",
+    testimonials_desc: "Hear from some of the families and entrepreneurs we've helped build their new life in Panama.",
+    t1_text: "We relocated from Florida at 63 with the Pensionado Visa. The team handled everything — documents, filings, even bank account setup. The whole process took about 4 months. We couldn't have done it without them.",
+    t1_name: "Robert & Linda M.", t1_origin: "Florida, USA", t1_visa: "Pensionado Visa",
+    t2_text: "Setting up our Panama corporation and opening the corporate bank account was seamless. Highly recommend for anyone looking to structure international business or protect assets.",
+    t2_name: "Carlos D.", t2_origin: "Bogotá, Colombia", t2_visa: "Corporation & Banking",
+    t3_text: "As a remote worker I explored the digital nomad visa and eventually upgraded to Friendly Nations residency. They explained every option clearly and the process was stress-free.",
+    t3_name: "Sarah K.", t3_origin: "London, UK", t3_visa: "Friendly Nations Visa",
     
     corp_title: "Panama Corporations / Foundations / Bank Accounts",
     corp_subtitle: "The ideal solution for international business",
@@ -128,8 +157,8 @@ export const translations = {
     contact_form_success: "Thank you! Your message has been sent."
   },
   es: {
-    meta_title: "Tu Nueva Vida en Panamá: Residencia, Visas e Inversión",
-    meta_description: "Asesoría legal experta en visas de residencia, banca, formación de empresas y establecimiento en Panamá. Más de 20 años de experiencia.",
+    meta_title: "Mudarse a Panamá | Abogados de Inmigración y Visas de Residencia",
+    meta_description: "Abogados de inmigración en Panamá con más de 20 años de experiencia. Visa Pensionado, Naciones Amigas, sociedades y bienes raíces. Consulta gratis 15 min.",
     nav_why: "¿Por qué Panamá?", nav_visa: "Opciones de Visa", nav_legal: "Info Legal",
     nav_services: "Servicios", nav_contact: "Contáctenos", nav_corp: "Sociedades",
     
@@ -222,10 +251,15 @@ export const translations = {
     faq2_q: "¿Puedo mantener el anonimato como accionista o director?", faq2_a: "La legislación panameña permite el uso de directores nominales y estructuras fiduciarias, aunque la transparencia internacional y normas AML deben ser consideradas.",
     faq3_q: "¿Cuánto tarda el proceso de residencia permanente?", faq3_a: "Los plazos varían entre 3 y 6 meses, dependiendo del tipo de visa y la preparación de la documentación.",
     faq4_q: "¿Puedo comprar propiedades como extranjero?", faq4_a: "Sí, Panamá permite a extranjeros adquirir propiedades en casi todo el territorio (excepto áreas restringidas como fronteras). Los derechos de propiedad son iguales que para los ciudadanos.",
+    faq5_q: "¿Cuáles son los beneficios fiscales de vivir en Panamá?", faq5_a: "Panamá aplica un sistema fiscal territorial: solo se gravan los ingresos generados dentro del país. Pensiones, dividendos, trabajo remoto y ganancias de capital de fuentes extranjeras están completamente exentos de impuestos para los residentes.",
+    faq6_q: "¿Puedo abrir una cuenta bancaria en Panamá como extranjero?", faq6_a: "Sí. Con la documentación correcta (pasaporte, prueba de ingresos, referencias y residencia panameña válida), los extranjeros pueden abrir cuentas personales y corporativas en los principales bancos de Panamá. Nuestro equipo te guía en todo el proceso.",
+    faq7_q: "¿Qué es la Visa de Nómada Digital en Panamá?", faq7_a: "La Visa de Estadía Corta para Trabajadores Remotos de Panamá permite a nómadas digitales vivir en el país hasta 9 meses trabajando de forma remota para empresas extranjeras. Requiere prueba de empleo remoto o ingresos freelance y seguro médico.",
+    faq8_q: "¿Cuánto dinero necesito para jubilarme en Panamá?", faq8_a: "Con la Visa de Pensionado necesitas una pensión mínima de $1,000/mes. El costo de vida en Ciudad de Panamá oscila entre $1,500 y $2,500/mes para un estilo de vida cómodo, lo que la convierte en uno de los destinos de retiro más accesibles de América.",
 
     contact_label: "CONTÁCTENOS", contact_title: "Contáctenos",
     contact_desc: "Reserva tu consulta gratuita de 15 minutos. Cuéntanos tu situación y te mostraremos tus mejores opciones.",
     contact_hq: "Sede Principal", contact_phone_label: "Teléfono y WhatsApp", contact_email_label: "Email y Redes",
+    contact_phone: "Teléfono y WhatsApp", contact_email: "Email y Redes",
     contact_cta: "Reservar Consulta Gratuita por WhatsApp",
 
     footer_tagline: "Tu socio de confianza para comenzar tu nueva vida en Panamá. Más de 20 años de experiencia legal ayudando a personas a comenzar su nueva etapa.",
@@ -235,6 +269,30 @@ export const translations = {
     wa_text: "Hola,%20me%20gustar%C3%ADa%20agendar%20la%20consulta%20gratuita%20de%2015%20minutos",
 
     trust_phrase: "Tu aliado de confianza para comenzar una nueva vida en el destino ideal.",
+
+    stat1_number: "20+", stat1_label: "Años de Experiencia",
+    stat2_number: "200+", stat2_label: "Familias Reubicadas",
+    stat3_number: "+10", stat3_label: "Países Atendidos",
+    stat4_number: "4", stat4_label: "Programas de Visa",
+
+    hiw_label: "EL PROCESO", hiw_title: "Comienza tu Vida en Panamá en 3 Pasos Simples",
+    hiw_desc: "Desde tu primera consulta hasta recibir tu tarjeta de residencia — nosotros manejamos cada detalle.",
+    hiw1_num: "01", hiw1_title: "Consulta Gratuita de 15 Min",
+    hiw1_desc: "Cuéntanos tus objetivos, nacionalidad y situación financiera. Identificamos la mejor visa y te explicamos cada paso de tu caso.",
+    hiw2_num: "02", hiw2_title: "Preparamos tu Expediente",
+    hiw2_desc: "Nuestros abogados recopilan y autentican documentos, presentan todos los trámites y gestionan cada paso ante las autoridades migratorias.",
+    hiw3_num: "03", hiw3_title: "Bienvenido a Panamá",
+    hiw3_desc: "Recibe tu tarjeta de residencia y comienza tu nueva vida. Seguimos disponibles para banca, bienes raíces y cualquier necesidad de seguimiento.",
+    hiw_cta: "Reservar Consulta Gratuita",
+
+    testimonials_label: "HISTORIAS DE CLIENTES", testimonials_title: "Personas Reales, Resultados Reales",
+    testimonials_desc: "Conoce a algunas de las familias y empresarios a quienes hemos ayudado a construir su nueva vida en Panamá.",
+    t1_text: "Nos mudamos desde Miami a los 63 años con la Visa de Pensionado. El equipo manejó todo — documentos, trámites, incluso la apertura de la cuenta bancaria. El proceso tomó unos 4 meses. No lo hubiéramos logrado sin ellos.",
+    t1_name: "Robert & Linda M.", t1_origin: "Florida, EE.UU.", t1_visa: "Visa de Pensionado",
+    t2_text: "Establecer nuestra sociedad panameña y abrir la cuenta bancaria corporativa fue muy sencillo. Altamente recomendados para cualquiera que quiera estructurar negocios internacionales o proteger activos.",
+    t2_name: "Carlos D.", t2_origin: "Bogotá, Colombia", t2_visa: "Sociedad y Banca",
+    t3_text: "Como trabajadora remota exploré la visa de nómada digital y luego actualicé a la residencia de Naciones Amigas. Explicaron cada opción con claridad y el proceso fue sin estrés.",
+    t3_name: "Sarah K.", t3_origin: "Londres, Reino Unido", t3_visa: "Visa de Naciones Amigas",
     
     corp_title: "Sociedad Panameña / Fundaciones / Cuenta Bancaria",
     corp_subtitle: "La solución ideal para negocios internacionales",

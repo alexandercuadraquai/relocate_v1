@@ -18,13 +18,34 @@ const {
   image = '/images/logo-transparent.png' 
 } = Astro.props;
 
-// Basic structured data for a Professional Service
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://relocatepa.com/#organization",
   "name": "Relocate to Panama",
   "url": "https://relocatepa.com",
-  "logo": "https://relocatepa.com/images/logo-transparent.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://relocatepa.com/images/logo-transparent.png",
+    "width": 400,
+    "height": 200
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Tercera Perejil, Edificio Elena",
+    "addressLocality": "Ciudad de Panamá",
+    "addressRegion": "Panamá",
+    "addressCountry": "PA"
+  },
+  "telephone": ["+507 6674-3696", "+1 786 425 7319"],
+  "email": "relocate2pa@gmail.com",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+507 6674-3696",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Spanish"],
+    "contactOption": "TollFree"
+  },
   "sameAs": [
     "https://www.instagram.com/Relocate2pa"
   ]
@@ -33,18 +54,62 @@ const organizationSchema = {
 const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "name": "Relocate to Panama",
+  "@id": "https://relocatepa.com/#legalservice",
+  "name": "Relocate to Panama — Panama Immigration Lawyers",
   "url": "https://relocatepa.com",
-  "logo": "https://relocatepa.com/images/logo.png",
+  "logo": "https://relocatepa.com/images/logo-transparent.png",
+  "image": "https://relocatepa.com/images/logo-transparent.png",
   "description": description,
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Calle Tercera Perejil, Edificio Elena",
     "addressLocality": "Ciudad de Panamá",
+    "addressRegion": "Panamá",
     "addressCountry": "PA"
   },
   "telephone": "+507 6674-3696",
-  "priceRange": "$$"
+  "email": "relocate2pa@gmail.com",
+  "priceRange": "$$",
+  "areaServed": [
+    { "@type": "Country", "name": "Panama" },
+    { "@type": "Country", "name": "United States" }
+  ],
+  "serviceType": [
+    "Immigration Law",
+    "Residency Visa",
+    "Pensionado Visa",
+    "Friendly Nations Visa",
+    "Corporation Formation",
+    "Real Estate Closing",
+    "Tax Planning"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Panama Immigration & Legal Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residency & Visa Processing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Panama Corporation Formation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real Estate Closings" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tax & Fiscal Compliance" } }
+    ]
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://relocatepa.com/#website",
+  "url": "https://relocatepa.com",
+  "name": "Relocate to Panama",
+  "description": "Expert Panama immigration lawyers helping you relocate, retire, and invest in Panama.",
+  "publisher": { "@id": "https://relocatepa.com/#organization" },
+  "inLanguage": ["en", "es"]
 };
 ---
 
@@ -53,36 +118,57 @@ const legalServiceSchema = {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Primary Meta Tags -->
   <title>{title}</title>
   <meta name="title" content={title}>
   <meta name="description" content={description}>
-  
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Relocate to Panama — Panama Attorneys at Law">
+  <meta name="keywords" content={lang === 'en'
+    ? "relocate to Panama, Panama residency visa, pensionado visa, friendly nations visa, Panama immigration lawyer, move to Panama, Panama retirement, invest in Panama, Panama corporation, real estate Panama"
+    : "mudarse a Panamá, visa residencia Panamá, visa pensionado, naciones amigas, abogado inmigración Panamá, retiro en Panamá, invertir en Panamá, sociedad panameña, bienes raíces Panamá"}>
+
+  <!-- Geo Tags (Local SEO) -->
+  <meta name="geo.region" content="PA">
+  <meta name="geo.placename" content="Ciudad de Panamá, Panamá">
+  <meta name="geo.position" content="8.9936;-79.5197">
+  <meta name="ICBM" content="8.9936, -79.5197">
+
   <link rel="canonical" href={canonical}>
   <link rel="alternate" hreflang="en" href="https://relocatepa.com" />
   <link rel="alternate" hreflang="es" href="https://relocatepa.com/es" />
   <link rel="alternate" hreflang="x-default" href="https://relocatepa.com" />
-  
+
   <meta name="theme-color" content="#ffffff">
-  
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="/images/logo-transparent.png" fetchpriority="high">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content={canonical}>
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
-  <meta property="og:image" content={image}>
+  <meta property="og:image" content={`https://relocatepa.com${image}`}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Relocate to Panama — Immigration Lawyers & Legal Services">
+  <meta property="og:site_name" content="Relocate to Panama">
   <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'es_PA'}>
+  <meta property="og:locale:alternate" content={lang === 'en' ? 'es_PA' : 'en_US'}>
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content={canonical}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-  <meta property="twitter:image" content={image}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Relocate2pa">
+  <meta name="twitter:url" content={canonical}>
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={`https://relocatepa.com${image}`}>
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="/images/logo-transparent.png" />
+  <link rel="apple-touch-icon" href="/images/logo-transparent.png" />
 
   <!-- Preconnect and Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,6 +176,7 @@ const legalServiceSchema = {
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(legalServiceSchema)} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify({
@@ -99,34 +186,42 @@ const legalServiceSchema = {
       {
         "@type": "Question",
         "name": translations[lang].faq1_q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": translations[lang].faq1_a
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq1_a }
       },
       {
         "@type": "Question",
         "name": translations[lang].faq2_q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": translations[lang].faq2_a
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq2_a }
       },
       {
         "@type": "Question",
         "name": translations[lang].faq3_q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": translations[lang].faq3_a
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq3_a }
       },
       {
         "@type": "Question",
         "name": translations[lang].faq4_q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": translations[lang].faq4_a
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq4_a }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq5_q,
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq5_a }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq6_q,
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq6_a }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq7_q,
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq7_a }
+      },
+      {
+        "@type": "Question",
+        "name": translations[lang].faq8_q,
+        "acceptedAnswer": { "@type": "Answer", "text": translations[lang].faq8_a }
       }
     ]
   })} />

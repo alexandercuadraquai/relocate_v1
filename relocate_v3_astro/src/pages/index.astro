@@ -49,6 +49,7 @@ const canonical = 'https://relocatepa.com';
     </div>
   </section>
 
+
   <section class="why-panama" id="why-panama">
     <div class="container">
       <p class="section-label animate-on-scroll" data-i18n="why_label">{t.why_label}</p>
@@ -76,6 +77,35 @@ const canonical = 'https://relocatepa.com';
           <p data-i18n="why_living_desc">{t.why_living_desc}</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+      <p class="section-label animate-on-scroll">{t.hiw_label}</p>
+      <h2 class="section-title animate-on-scroll">{t.hiw_title}</h2>
+      <p class="section-desc animate-on-scroll">{t.hiw_desc}</p>
+      <div class="steps-grid">
+        <div class="step-card animate-on-scroll">
+          <div class="step-number">{t.hiw1_num}</div>
+          <h3>{t.hiw1_title}</h3>
+          <p>{t.hiw1_desc}</p>
+        </div>
+        <div class="step-arrow animate-on-scroll">→</div>
+        <div class="step-card animate-on-scroll">
+          <div class="step-number">{t.hiw2_num}</div>
+          <h3>{t.hiw2_title}</h3>
+          <p>{t.hiw2_desc}</p>
+        </div>
+        <div class="step-arrow animate-on-scroll">→</div>
+        <div class="step-card animate-on-scroll">
+          <div class="step-number">{t.hiw3_num}</div>
+          <h3>{t.hiw3_title}</h3>
+          <p>{t.hiw3_desc}</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary animate-on-scroll">{t.hiw_cta}</a>
     </div>
   </section>
 
@@ -304,6 +334,54 @@ const canonical = 'https://relocatepa.com';
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <p class="section-label animate-on-scroll">{t.testimonials_label}</p>
+      <h2 class="section-title animate-on-scroll">{t.testimonials_title}</h2>
+      <p class="section-desc animate-on-scroll">{t.testimonials_desc}</p>
+      <!-- TODO: Replace with verified real client testimonials -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">{t.t1_text}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RM</div>
+            <div class="author-info">
+              <span class="author-name">{t.t1_name}</span>
+              <span class="author-origin">{t.t1_origin}</span>
+              <span class="author-visa">{t.t1_visa}</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">{t.t2_text}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CD</div>
+            <div class="author-info">
+              <span class="author-name">{t.t2_name}</span>
+              <span class="author-origin">{t.t2_origin}</span>
+              <span class="author-visa">{t.t2_visa}</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">{t.t3_text}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <span class="author-name">{t.t3_name}</span>
+              <span class="author-origin">{t.t3_origin}</span>
+              <span class="author-visa">{t.t3_visa}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="faq-section" id="faq">
     <div class="container">
       <p class="section-label animate-on-scroll" data-i18n="faq_label">{t.faq_label}</p>
@@ -345,6 +423,42 @@ const canonical = 'https://relocatepa.com';
           </button>
           <div class="faq-answer">
             <p data-i18n="faq4_a">{t.faq4_a}</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" id="faq-q5">
+            <span data-i18n="faq5_q">{t.faq5_q}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5_a">{t.faq5_a}</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" id="faq-q6">
+            <span data-i18n="faq6_q">{t.faq6_q}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq6_a">{t.faq6_a}</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" id="faq-q7">
+            <span data-i18n="faq7_q">{t.faq7_q}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq7_a">{t.faq7_a}</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" id="faq-q8">
+            <span data-i18n="faq8_q">{t.faq8_q}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq8_a">{t.faq8_a}</p>
           </div>
         </div>
 
@@ -456,6 +570,15 @@ const canonical = 'https://relocatepa.com';
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href={waLink} class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.057 23.214a.75.75 0 0 0 .921.937l5.487-1.447A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.524-5.2-1.436l-.372-.22-3.863 1.018 1.04-3.762-.243-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+    <span class="wa-float-label">{t.contact_cta}</span>
+  </a>
 
   <script>
     const navbar = document.getElementById('navbar')!;
