@@ -15,7 +15,7 @@ const {
   description, 
   lang = 'en', 
   canonical = 'https://relocatepa.com', 
-  image = '/images/logo-transparent.png' 
+  image = '/images/logo-transparent-new.png' 
 } = Astro.props;
 
 const organizationSchema = {
@@ -26,7 +26,7 @@ const organizationSchema = {
   "url": "https://relocatepa.com",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://relocatepa.com/images/logo-transparent.png",
+    "url": "https://relocatepa.com/images/logo-transparent-new.png",
     "width": 400,
     "height": 200
   },
@@ -57,8 +57,8 @@ const legalServiceSchema = {
   "@id": "https://relocatepa.com/#legalservice",
   "name": "Relocate to Panama — Panama Immigration Lawyers",
   "url": "https://relocatepa.com",
-  "logo": "https://relocatepa.com/images/logo-transparent.png",
-  "image": "https://relocatepa.com/images/logo-transparent.png",
+  "logo": "https://relocatepa.com/images/logo-transparent-new.png",
+  "image": "https://relocatepa.com/images/logo-transparent-new.png",
   "description": description,
   "address": {
     "@type": "PostalAddress",
@@ -143,7 +143,7 @@ const websiteSchema = {
   <meta name="theme-color" content="#ffffff">
 
   <!-- Preload LCP image -->
-  <link rel="preload" as="image" href="/images/logo-transparent.png" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/logo-transparent-new.png" fetchpriority="high">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -167,8 +167,8 @@ const websiteSchema = {
   <meta name="twitter:image" content={`https://relocatepa.com${image}`}>
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/images/logo-transparent.png" />
-  <link rel="apple-touch-icon" href="/images/logo-transparent.png" />
+  <link rel="icon" type="image/png" href="/images/logo-transparent-new.png" />
+  <link rel="apple-touch-icon" href="/images/logo-transparent-new.png" />
 
   <!-- Preconnect and Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
