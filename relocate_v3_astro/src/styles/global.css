@@ -70,6 +70,15 @@ h1, h2, h3, h4, .nav-logo {
 .btn-outline { background-color: transparent; border-color: var(--emerald); color: var(--emerald); }
 .btn-outline:hover { background-color: var(--emerald); color: #fff; }
 
+.hero .btn-outline {
+  background-color: rgba(255,255,255,0.15);
+  border-color: #fff;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.hero .btn-outline:hover { background-color: #fff; color: var(--emerald); border-color: #fff; }
+
 /* NAVBAR */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0;
