@@ -2,5 +2,32 @@
 User-agent: *
 Allow: /
 
+# AI search / answer-engine crawlers — explicitly allowed so this site can be
+# cited by ChatGPT, Claude, Perplexity, Google AI Overviews/Gemini, and Copilot.
+# See docs/ai-seo-audit-2026-08.md for context.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Training-only crawler (no search/citation use) — blocked, not a citation source.
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://relocatepa.com/sitemap-index.xml
-Sitemap: https://relocatepa.com/sitemap.xml

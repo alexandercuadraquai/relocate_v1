@@ -1,0 +1,67 @@
+---
+// Shared footer for standalone service/visa pages — mirrors the homepage footer
+// in src/pages/index.astro / es.astro, with links pointing back to the homepage.
+import { translations, type Lang } from '../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = translations[lang];
+const home = lang === 'es' ? '/es' : '/';
+const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href={`${home}#hero`} class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="footer-logo-img"></a>
+        <p>{t.footer_tagline}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{t.footer_nav}</h4>
+        <a href={`${home}#why-panama`}>{t.nav_why}</a>
+        <a href={`${home}#visa-programs`}>{t.nav_visa}</a>
+        <a href={`${home}#legal`}>{t.nav_legal}</a>
+        <a href={`${home}#services`}>{t.nav_services}</a>
+      </div>
+      <div class="footer-col">
+        <h4>{t.footer_contact}</h4>
+        <a href="mailto:relocate2pa@gmail.com">relocate2pa@gmail.com</a>
+        <a href={waLink} target="_blank" rel="noopener">+507 6674-3696</a>
+        <a href="tel:+17864257319">+1 786 425 7319</a>
+      </div>
+      <div class="footer-col">
+        <h4>{t.footer_social}</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/Relocate2pa" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href={waLink} target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-13.8 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="margin: 0 0 30px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 30px;">
+        <h4 style="color: var(--emerald); margin-bottom: 5px; font-size: 0.95rem; letter-spacing: 1px; font-family: var(--font-heading);">PANAMA ATTORNEYS AT LAW</h4>
+        <p style="opacity: 0.8; font-size: 1.1rem; margin-bottom: 20px; color: var(--text-body); font-weight: 500;">Attorney At Law &amp; Real Estate Broker</p>
+        <p style="font-size: 1rem; color: var(--text-dark);">USA: <a href="tel:+17864257319" style="display: inline; color: var(--emerald); font-weight: 600;">(786) 425-7319</a> | PTY: <a href="tel:+50766743696" style="display: inline; color: var(--emerald); font-weight: 600;">(507) 6674-3696</a></p>
+      </div>
+      <p style="margin-bottom: 25px; opacity: 0.6; font-size: 0.8rem;">{t.footer_legal}</p>
+      <p style="opacity: 0.5; font-size: 0.75rem; margin-bottom: 8px;">Page content last reviewed: August 2026</p>
+      <p style="opacity: 0.8; font-size: 0.85rem; font-weight: 500;">{t.footer_copy}</p>
+    </div>
+  </div>
+</footer>
+
+<a href={waLink} class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.057 23.214a.75.75 0 0 0 .921.937l5.487-1.447A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.524-5.2-1.436l-.372-.22-3.863 1.018 1.04-3.762-.243-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+  <span class="wa-float-label">{t.contact_cta}</span>
+</a>

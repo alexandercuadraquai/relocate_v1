@@ -1,0 +1,171 @@
+---
+// Standalone landing page for Panama corporation/foundation formation — same
+// pattern as VisaLanding.astro, reusing the corp_* content already used on the
+// homepage's #corporations section.
+import { translations, type Lang } from '../i18n/translations';
+import ServiceNav from './ServiceNav.astro';
+import ServiceFooter from './ServiceFooter.astro';
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+}
+
+const { lang, slug } = Astro.props;
+const t = translations[lang] as any;
+const home = lang === 'es' ? '/es' : '';
+const segment = lang === 'es' ? 'servicios' : 'services';
+const canonical = `https://relocatepa.com${home}/${segment}/${slug}`;
+const altHref = lang === 'es' ? `/services/${slug}` : `/es/servicios/${slug}`;
+const enHref = `https://relocatepa.com/services/${slug}`;
+const esHref = `https://relocatepa.com/es/servicios/${slug}`;
+const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
+
+const benefits = [1, 2, 3, 4, 5].map(i => ({ title: t[`corp_ben${i}_title`], desc: t[`corp_ben${i}_desc`] }));
+const faqs = [1, 2, 3].map(i => ({ q: t[`corp_faq${i}_q`], a: t[`corp_faq${i}_a`] }));
+
+const VISA_SLUGS: Record<string, string> = {
+  visa1: 'pensionado-visa',
+  visa2: 'friendly-nations-visa',
+  visa3: 'qualified-investor-visa',
+  visa4: 'self-economic-solvency-visa'
+};
+const ALL_VISAS = ['visa1', 'visa2', 'visa3', 'visa4'] as const;
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": t.corp_title,
+  "name": `${t.corp_title} — Panama`,
+  "description": t.corp_desc,
+  "provider": { "@id": "https://relocatepa.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "Panama" },
+  "url": canonical
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home || '/'}` },
+    { "@type": "ListItem", "position": 2, "name": t.nav_corp, "item": `https://relocatepa.com${home}/#corporations` },
+    { "@type": "ListItem", "position": 3, "name": t.corp_title, "item": canonical }
+  ]
+};
+---
+
+<Layout title={t.corp_page_title} description={t.corp_page_desc} lang={lang} canonical={canonical} enHref={enHref} esHref={esHref}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <ServiceNav lang={lang} altHref={altHref} />
+
+  <main>
+    <section class="service-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href={home || '/'}>{t.svc_breadcrumb_home}</a> ›
+          <a href={`${home}/#corporations`}>{t.nav_corp}</a> ›
+          <span>{t.corp_title}</span>
+        </p>
+        <p class="visa-for" style="text-align: left;">{t.corp_subtitle}</p>
+        <h1>{t.corp_title}</h1>
+        <p class="service-intro">{t.corp_desc}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+      </div>
+    </section>
+
+    <section class="why-panama">
+      <div class="container">
+        <h2 class="section-title">{t.corp_ben_title}</h2>
+        <div class="features-grid">
+          {benefits.map(b => (
+            <div class="feature-card">
+              <div class="feature-card-body">
+                <h3>{b.title}</h3>
+                <p>{b.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_process_title}</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">{t.hiw1_num}</div>
+            <h3>{t.hiw1_title}</h3>
+            <p>{t.hiw1_desc}</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-number">{t.hiw2_num}</div>
+            <h3>{t.hiw2_title}</h3>
+            <p>{t.hiw2_desc}</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-number">{t.hiw3_num}</div>
+            <h3>{t.hiw3_title}</h3>
+            <p>{t.hiw3_desc}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_faq_title}</h2>
+        <div class="faq-list">
+          {faqs.map((f, i) => (
+            <div class="faq-item">
+              <button class="faq-question" id={`corp-faq-q${i}`} aria-expanded="false" aria-controls={`corp-faq-a${i}`}>
+                <span>{f.q}</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id={`corp-faq-a${i}`}>
+                <p>{f.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_cta_title}</h2>
+        <p class="section-desc">{t.svc_cta_desc}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+
+        <div class="related-visas">
+          <h3>{t.svc_related_title}</h3>
+          <div class="related-visas-links">
+            {ALL_VISAS.map(k => (
+              <a href={`${home}/visas/${VISA_SLUGS[k]}`} class="btn btn-outline">{t[`${k}_name`]}</a>
+            ))}
+          </div>
+          <a href={home || '/'} class="back-home-link">{t.svc_back_home}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <ServiceFooter lang={lang} />
+</Layout>

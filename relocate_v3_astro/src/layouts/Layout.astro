@@ -8,15 +8,29 @@ interface Props {
   lang?: string;
   canonical?: string;
   image?: string;
+  noindex?: boolean;
+  enHref?: string; // English version of THIS page, for hreflang alternates
+  esHref?: string; // Spanish version of THIS page, for hreflang alternates
 }
 
-const { 
-  title, 
-  description, 
-  lang = 'en', 
-  canonical = 'https://relocatepa.com', 
-  image = '/images/logo-transparent-new.png' 
+const {
+  title,
+  description,
+  lang = 'en',
+  canonical = 'https://relocatepa.com',
+  image = '/images/logo-transparent-new.png',
+  noindex = false,
+  enHref = 'https://relocatepa.com',
+  esHref = 'https://relocatepa.com/es'
 } = Astro.props;
+
+// Reviews shown as testimonials on the homepage — kept in sync manually with
+// the t1_*/t2_*/t3_* strings in src/i18n/translations.ts (see docs/ai-seo-audit-2026-08.md).
+const reviews = [
+  { name: "Robert & Linda M.", text: translations['en'].t1_text },
+  { name: "Carlos D.", text: translations['en'].t2_text },
+  { name: "Sarah K.", text: translations['en'].t3_text }
+];
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -98,7 +112,19 @@ const legalServiceSchema = {
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "09:00",
     "closes": "18:00"
-  }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": reviews.length,
+    "bestRating": "5"
+  },
+  "review": reviews.map(r => ({
+    "@type": "Review",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "author": { "@type": "Person", "name": r.name },
+    "reviewBody": r.text
+  }))
 };
 
 const websiteSchema = {
@@ -123,7 +149,7 @@ const websiteSchema = {
   <title>{title}</title>
   <meta name="title" content={title}>
   <meta name="description" content={description}>
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"}>
   <meta name="author" content="Relocate to Panama — Panama Attorneys at Law">
   <meta name="keywords" content={lang === 'en'
     ? "relocate to Panama, Panama residency visa, pensionado visa, friendly nations visa, Panama immigration lawyer, move to Panama, Panama retirement, invest in Panama, Panama corporation, real estate Panama"
@@ -136,9 +162,9 @@ const websiteSchema = {
   <meta name="ICBM" content="8.9936, -79.5197">
 
   <link rel="canonical" href={canonical}>
-  <link rel="alternate" hreflang="en" href="https://relocatepa.com" />
-  <link rel="alternate" hreflang="es" href="https://relocatepa.com/es" />
-  <link rel="alternate" hreflang="x-default" href="https://relocatepa.com" />
+  <link rel="alternate" hreflang="en" href={enHref} />
+  <link rel="alternate" hreflang="es" href={esHref} />
+  <link rel="alternate" hreflang="x-default" href={enHref} />
 
   <meta name="theme-color" content="#ffffff">
 
