@@ -21,7 +21,7 @@ const canonical = 'https://relocatepa.com';
         <a href="#services" data-i18n="nav_services">{t.nav_services}</a>
         <a href="#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
-          <a href="/en" class="lang-btn active">EN</a>
+          <a href="/" class="lang-btn active">EN</a>
           <a href="/es" class="lang-btn">ES</a>
         </div>
       </div>
@@ -30,6 +30,8 @@ const canonical = 'https://relocatepa.com';
       </button>
     </div>
   </nav>
+
+  <main>
 
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
@@ -63,6 +65,7 @@ const canonical = 'https://relocatepa.com';
           <div class="feature-card-body">
             <h3 data-i18n="why_climate_title">{t.why_climate_title}</h3>
             <p data-i18n="why_climate_desc">{t.why_climate_desc}</p>
+            <a href="/why-panama/perfect-climate" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -72,6 +75,7 @@ const canonical = 'https://relocatepa.com';
           <div class="feature-card-body">
             <h3 data-i18n="why_economy_title">{t.why_economy_title}</h3>
             <p data-i18n="why_economy_desc">{t.why_economy_desc}</p>
+            <a href="/why-panama/booming-economy" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -81,6 +85,7 @@ const canonical = 'https://relocatepa.com';
           <div class="feature-card-body">
             <h3 data-i18n="why_location_title">{t.why_location_title}</h3>
             <p data-i18n="why_location_desc">{t.why_location_desc}</p>
+            <a href="/why-panama/strategic-location" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -90,6 +95,7 @@ const canonical = 'https://relocatepa.com';
           <div class="feature-card-body">
             <h3 data-i18n="why_living_title">{t.why_living_title}</h3>
             <p data-i18n="why_living_desc">{t.why_living_desc}</p>
+            <a href="/why-panama/world-class-living" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
       </div>
@@ -162,6 +168,7 @@ const canonical = 'https://relocatepa.com';
                 <p data-i18n="corp_ben5_desc">{t.corp_ben5_desc}</p>
               </div>
             </div>
+            <a href="/services/panama-corporations-foundations" class="btn btn-outline" style="display: block; width: max-content; margin: 24px auto 0;">{t.svc_learn_more}</a>
           </div>
         </div>
       </div>
@@ -196,6 +203,7 @@ const canonical = 'https://relocatepa.com';
               <li data-i18n="visa1_ben4">{t.visa1_ben4}</li>
               <li data-i18n="visa1_ben5">{t.visa1_ben5}</li>
             </ul>
+            <a href="/visas/pensionado-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -221,6 +229,7 @@ const canonical = 'https://relocatepa.com';
               <li data-i18n="visa2_ben4">{t.visa2_ben4}</li>
               <li data-i18n="visa2_ben5">{t.visa2_ben5}</li>
             </ul>
+            <a href="/visas/friendly-nations-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -246,6 +255,7 @@ const canonical = 'https://relocatepa.com';
               <li data-i18n="visa3_ben4">{t.visa3_ben4}</li>
               <li data-i18n="visa3_ben5">{t.visa3_ben5}</li>
             </ul>
+            <a href="/visas/qualified-investor-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -271,6 +281,7 @@ const canonical = 'https://relocatepa.com';
               <li data-i18n="visa4_ben4">{t.visa4_ben4}</li>
               <li data-i18n="visa4_ben5">{t.visa4_ben5}</li>
             </ul>
+            <a href="/visas/self-economic-solvency-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -409,74 +420,74 @@ const canonical = 'https://relocatepa.com';
       <div class="faq-list">
         
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q1">
+          <button class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
             <span data-i18n="faq1_q">{t.faq1_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a1">
             <p data-i18n="faq1_a">{t.faq1_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q2">
+          <button class="faq-question" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
             <span data-i18n="faq2_q">{t.faq2_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a2">
             <p data-i18n="faq2_a">{t.faq2_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q3">
+          <button class="faq-question" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
             <span data-i18n="faq3_q">{t.faq3_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a3">
             <p data-i18n="faq3_a">{t.faq3_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q4">
+          <button class="faq-question" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
             <span data-i18n="faq4_q">{t.faq4_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a4">
             <p data-i18n="faq4_a">{t.faq4_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q5">
+          <button class="faq-question" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
             <span data-i18n="faq5_q">{t.faq5_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a5">
             <p data-i18n="faq5_a">{t.faq5_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q6">
+          <button class="faq-question" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
             <span data-i18n="faq6_q">{t.faq6_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a6">
             <p data-i18n="faq6_a">{t.faq6_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q7">
+          <button class="faq-question" id="faq-q7" aria-expanded="false" aria-controls="faq-a7">
             <span data-i18n="faq7_q">{t.faq7_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a7">
             <p data-i18n="faq7_a">{t.faq7_a}</p>
           </div>
         </div>
         <div class="faq-item animate-on-scroll">
-          <button class="faq-question" id="faq-q8">
+          <button class="faq-question" id="faq-q8" aria-expanded="false" aria-controls="faq-a8">
             <span data-i18n="faq8_q">{t.faq8_q}</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a8">
             <p data-i18n="faq8_a">{t.faq8_a}</p>
           </div>
         </div>
@@ -550,6 +561,8 @@ const canonical = 'https://relocatepa.com';
     </div>
   </section>
 
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -589,6 +602,7 @@ const canonical = 'https://relocatepa.com';
           <p style="font-size: 1rem; color: var(--text-dark);">USA: <a href="tel:+17864257319" style="display: inline; color: var(--emerald); font-weight: 600;">(786) 425-7319</a> | PTY: <a href="tel:+50766743696" style="display: inline; color: var(--emerald); font-weight: 600;">(507) 6674-3696</a></p>
         </div>
         <p data-i18n="footer_legal" style="margin-bottom: 25px; opacity: 0.6; font-size: 0.8rem;">{t.footer_legal}</p>
+        <p style="opacity: 0.5; font-size: 0.75rem; margin-bottom: 8px;">Page content last reviewed: August 2026</p>
         <p data-i18n="footer_copy" style="opacity: 0.8; font-size: 0.85rem; font-weight: 500;">{t.footer_copy}</p>
       </div>
     </div>
@@ -628,8 +642,14 @@ const canonical = 'https://relocatepa.com';
       btn.addEventListener('click', () => {
         const item = btn.parentElement!;
         const isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        if (!isActive) item.classList.add('active');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 

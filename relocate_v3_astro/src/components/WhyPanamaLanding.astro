@@ -1,0 +1,159 @@
+---
+// Standalone landing page for each "Why Panama" pillar (climate, economy,
+// location, lifestyle) — same pattern as VisaLanding.astro, reusing the
+// why_* short blurbs already on the homepage and expanding them with
+// dedicated intro/facts/FAQ content for this topic.
+import { translations, type Lang } from '../i18n/translations';
+import ServiceNav from './ServiceNav.astro';
+import ServiceFooter from './ServiceFooter.astro';
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+  lang: Lang;
+  topicKey: 'climate' | 'economy' | 'location' | 'living';
+  slug: string; // same slug used in both languages
+  image: string;
+  imagePosition?: string; // CSS object-position, for images where the default center crop hides the subject
+}
+
+const TOPIC_SLUGS: Record<string, string> = {
+  climate: 'perfect-climate',
+  economy: 'booming-economy',
+  location: 'strategic-location',
+  living: 'world-class-living'
+};
+
+const { lang, topicKey, slug, image, imagePosition = 'center center' } = Astro.props;
+const t = translations[lang] as any;
+const home = lang === 'es' ? '/es' : '';
+const segment = lang === 'es' ? 'por-que-panama' : 'why-panama';
+const canonical = `https://relocatepa.com${home}/${segment}/${slug}`;
+const altHref = lang === 'es' ? `/why-panama/${slug}` : `/es/por-que-panama/${slug}`;
+const enHref = `https://relocatepa.com/why-panama/${slug}`;
+const esHref = `https://relocatepa.com/es/por-que-panama/${slug}`;
+const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
+
+const w = (key: string) => t[`why_${topicKey}_${key}`];
+const title = w('title');
+const facts = [1, 2, 3, 4].map(i => ({ title: w(`fact${i}_title`), desc: w(`fact${i}_desc`) }));
+const faqs = [1, 2].map(i => ({ q: w(`faq${i}_q`), a: w(`faq${i}_a`) }));
+
+const ALL_TOPICS = ['climate', 'economy', 'location', 'living'] as const;
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": w('intro'),
+  "author": { "@id": "https://relocatepa.com/#organization" },
+  "publisher": { "@id": "https://relocatepa.com/#organization" },
+  "url": canonical
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home || '/'}` },
+    { "@type": "ListItem", "position": 2, "name": t.svc_breadcrumb_why, "item": `https://relocatepa.com${home}/#why-panama` },
+    { "@type": "ListItem", "position": 3, "name": title, "item": canonical }
+  ]
+};
+---
+
+<Layout title={w('page_title')} description={w('page_desc')} lang={lang} canonical={canonical} enHref={enHref} esHref={esHref}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <ServiceNav lang={lang} altHref={altHref} />
+
+  <main>
+    <section class="service-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href={home || '/'}>{t.svc_breadcrumb_home}</a> ›
+          <a href={`${home}/#why-panama`}>{t.svc_breadcrumb_why}</a> ›
+          <span>{title}</span>
+        </p>
+        <h1>{title}</h1>
+        <p class="service-intro">{w('intro')}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+      </div>
+    </section>
+
+    <section class="section-img-banner-wrap">
+      <div class="container">
+        <div class="section-img-banner section-img-banner--cover">
+          <img src={image} alt={title} loading="lazy" style={`object-position: ${imagePosition};`}>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-panama">
+      <div class="container">
+        <h2 class="section-title">{t.why_facts_title}</h2>
+        <div class="features-grid">
+          {facts.map(f => (
+            <div class="feature-card">
+              <div class="feature-card-body">
+                <h3>{f.title}</h3>
+                <p>{f.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_faq_title}</h2>
+        <div class="faq-list">
+          {faqs.map((f, i) => (
+            <div class="faq-item">
+              <button class="faq-question" id={`why-faq-q${i}`} aria-expanded="false" aria-controls={`why-faq-a${i}`}>
+                <span>{f.q}</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id={`why-faq-a${i}`}>
+                <p>{f.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_cta_title}</h2>
+        <p class="section-desc">{t.svc_cta_desc}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+
+        <div class="related-visas">
+          <h3>{t.why_related_title}</h3>
+          <div class="related-visas-links">
+            {ALL_TOPICS.filter(k => k !== topicKey).map(k => (
+              <a href={`${home}/${segment}/${TOPIC_SLUGS[k]}`} class="btn btn-outline">{t[`why_${k}_title`]}</a>
+            ))}
+          </div>
+          <a href={home || '/'} class="back-home-link">{t.svc_back_home}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <ServiceFooter lang={lang} />
+</Layout>

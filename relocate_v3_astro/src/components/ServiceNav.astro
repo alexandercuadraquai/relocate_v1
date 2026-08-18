@@ -1,0 +1,58 @@
+---
+// Shared nav for standalone service/visa pages (not the homepage).
+// Anchors point back to the homepage sections since this isn't the homepage itself,
+// so the homepage's in-page smooth-scroll script (which only intercepts bare "#..." hrefs)
+// doesn't apply here — these are normal cross-page navigations, which is correct.
+import { translations, type Lang } from '../i18n/translations';
+
+interface Props {
+  lang: Lang;
+  altHref: string; // URL of the equivalent page in the other language
+}
+
+const { lang, altHref } = Astro.props;
+const t = translations[lang];
+const home = lang === 'es' ? '/es' : '/';
+---
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href={`${home}#hero`} class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+    <div class="nav-links" id="navLinks">
+      <a href={`${home}#why-panama`}>{t.nav_why}</a>
+      <a href={`${home}#corporations`}>{t.nav_corp}</a>
+      <a href={`${home}#visa-programs`}>{t.nav_visa}</a>
+      <a href={`${home}#services`}>{t.nav_services}</a>
+      <a href={`${home}#contact`} class="nav-cta">{t.nav_contact}</a>
+      <div class="lang-toggle">
+        <a href={lang === 'en' ? Astro.url.pathname : altHref} class:list={["lang-btn", { active: lang === 'en' }]}>EN</a>
+        <a href={lang === 'es' ? Astro.url.pathname : altHref} class:list={["lang-btn", { active: lang === 'es' }]}>ES</a>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById('navbar')!;
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  const hamburger = document.getElementById('hamburger')!;
+  const navLinks = document.getElementById('navLinks')!;
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
