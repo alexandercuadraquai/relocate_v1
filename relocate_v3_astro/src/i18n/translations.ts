@@ -69,6 +69,7 @@ export const translations = {
     why_climate_fact4_title: "Ocean Breezes on Both Coasts", why_climate_fact4_desc: "With both a Pacific and a Caribbean coastline, coastal areas benefit from consistent ocean breezes that moderate the tropical heat.",
     why_climate_faq1_q: "Is Panama's weather comfortable for retirees year-round?", why_climate_faq1_a: "Yes, for most people. Temperatures stay warm and stable throughout the year without the extreme heat, cold, or storms found in many other regions — though the rainy season brings daily afternoon showers that some newcomers need to adjust to.",
     why_climate_faq2_q: "When is the best time of year to visit or move to Panama?", why_climate_faq2_a: "The dry season (roughly mid-December to April) is generally considered the most comfortable for visiting or relocating, with the least rainfall and consistent sunshine.",
+    why_climate_faq3_q: "Does it rain all day during the rainy season?", why_climate_faq3_a: "No. Rainy season showers are typically concentrated in the afternoon and evening, often for an hour or two, with sunny mornings — many residents plan outdoor activities around this pattern rather than avoiding the rainy season entirely.",
 
     why_economy_page_title: "Panama's Economy 2026 — Why It's a Top Business & Investment Hub",
     why_economy_page_desc: "Panama's dollarized, fast-growing economy: the Panama Canal, banking hub, no capital gains tax on foreign income. Learn why investors and entrepreneurs relocate here. Free consultation.",
@@ -79,6 +80,7 @@ export const translations = {
     why_economy_fact4_title: "Territorial Tax System", why_economy_fact4_desc: "Only income generated within Panama is taxed — foreign-sourced income, including pensions, dividends, and remote work earnings, is tax-exempt for residents.",
     why_economy_faq1_q: "Is Panama a good place to start a business or invest?", why_economy_faq1_a: "Yes. Panama's dollarized economy, territorial tax system, and role as a regional trade and banking hub make it attractive for entrepreneurs and investors — particularly those in international trade, logistics, real estate, or remote-first businesses.",
     why_economy_faq2_q: "Does Panama have currency exchange risk?", why_economy_faq2_a: "No. The US Dollar circulates as legal tender alongside the Balboa, which is pegged 1:1 to the dollar, so there is no currency conversion risk for USD-based investors and retirees.",
+    why_economy_faq3_q: "What industries drive Panama's economy?", why_economy_faq3_a: "The Panama Canal and related logistics, international banking, tourism, construction, and re-export/free trade zone commerce (notably the Colón Free Zone) are among the main pillars of Panama's economy.",
 
     why_location_page_title: "Panama's Location 2026 — Crossroads of the Americas",
     why_location_page_desc: "Why Panama's strategic location matters: direct flights to the US and Europe, the Panama Canal, and easy access to both the Pacific and Caribbean. Free consultation.",
@@ -89,6 +91,7 @@ export const translations = {
     why_location_fact4_title: "The Panama Canal", why_location_fact4_desc: "One of the world's most important shipping routes runs directly through the country, reinforcing Panama's role as a global logistics and trade hub.",
     why_location_faq1_q: "How far is Panama from the United States?", why_location_faq1_a: "Flight times range from roughly 3 hours (Miami) to about 5-6 hours (New York), depending on your departure city, making Panama one of the most accessible Latin American countries from the US.",
     why_location_faq2_q: "Can I fly directly to Panama from Europe?", why_location_faq2_a: "Yes, Panama City has direct flights from several major European cities, including Madrid, in addition to strong connectivity across the Americas through Tocumen International Airport.",
+    why_location_faq3_q: "Is Panama in a hurricane or earthquake risk zone?", why_location_faq3_a: "Panama sits outside the Atlantic hurricane belt, so hurricane risk is minimal. Like much of the region, it does have some seismic activity, though major cities are generally built to modern construction standards.",
 
     why_living_page_title: "Living in Panama 2026 — Lifestyle, Cost & Communities",
     why_living_page_desc: "What life in Panama is really like: cost of living, expat communities, Panama City vs. mountain and beach towns. Free consultation with relocation experts.",
@@ -99,6 +102,7 @@ export const translations = {
     why_living_fact4_title: "Variety of Lifestyles", why_living_fact4_desc: "Whether you prefer a high-rise in the financial district, a colonial home in Casco Antiguo, a mountain retreat in Boquete, or a beach town on either coast, Panama offers distinct lifestyle options within a small country.",
     why_living_faq1_q: "Is Panama affordable to live in compared to the US?", why_living_faq1_a: "For most people, yes. Housing, groceries, dining out, and domestic help typically cost significantly less than in the US or Canada, although costs vary by city and neighborhood — Panama City's most exclusive areas can be comparable to major US cities.",
     why_living_faq2_q: "Is there a large expat community in Panama?", why_living_faq2_a: "Yes. Panama has attracted retirees, entrepreneurs, and remote workers from the US, Canada, and Europe for decades, with especially well-established communities in Panama City, Boquete, Coronado, and Bocas del Toro.",
+    why_living_faq3_q: "Is healthcare in Panama good enough for retirees?", why_living_faq3_a: "Panama City has several modern private hospitals with US-trained specialists, and many are used to treating international patients. Healthcare quality and availability outside major cities is more limited, which is a factor retirees often weigh when choosing where to settle.",
 
     visa2_for: "FOR CITIZENS OF 50+ COUNTRIES", visa2_name: "Friendly Nations Visa",
     visa2_req1: "Citizen of one of the 50 approved 'Friendly Nations'",
@@ -324,6 +328,7 @@ export const translations = {
     why_climate_fact4_title: "Brisas Marinas en Ambas Costas", why_climate_fact4_desc: "Con costa en el Pacífico y en el Caribe, las zonas costeras se benefician de brisas marinas constantes que moderan el calor tropical.",
     why_climate_faq1_q: "¿Es el clima de Panamá cómodo para jubilados todo el año?", why_climate_faq1_a: "Sí, para la mayoría de las personas. Las temperaturas se mantienen cálidas y estables durante todo el año sin el calor extremo, frío o tormentas de muchas otras regiones — aunque la estación lluviosa trae lluvias vespertinas diarias a las que algunos recién llegados deben adaptarse.",
     why_climate_faq2_q: "¿Cuál es la mejor época del año para visitar o mudarse a Panamá?", why_climate_faq2_a: "La estación seca (aproximadamente de mediados de diciembre a abril) generalmente se considera la más cómoda para visitar o mudarse, con menos lluvia y sol constante.",
+    why_climate_faq3_q: "¿Llueve todo el día durante la estación lluviosa?", why_climate_faq3_a: "No. Las lluvias de la estación lluviosa se concentran típicamente en las tardes y noches, a menudo por una o dos horas, con mañanas soleadas — muchos residentes planifican sus actividades al aire libre según este patrón en vez de evitar la estación lluviosa por completo.",
 
     why_economy_page_title: "La Economía de Panamá 2026 — Por Qué es un Centro de Negocios e Inversión",
     why_economy_page_desc: "La economía dolarizada y en auge de Panamá: el Canal de Panamá, centro bancario, sin impuesto a ganancias de capital extranjeras. Descubre por qué inversores y emprendedores se mudan aquí. Consulta gratuita.",
@@ -334,6 +339,7 @@ export const translations = {
     why_economy_fact4_title: "Sistema Fiscal Territorial", why_economy_fact4_desc: "Solo se grava el ingreso generado dentro de Panamá — los ingresos de fuente extranjera, incluyendo pensiones, dividendos y trabajo remoto, están exentos de impuestos para los residentes.",
     why_economy_faq1_q: "¿Es Panamá un buen lugar para iniciar un negocio o invertir?", why_economy_faq1_a: "Sí. La economía dolarizada de Panamá, su sistema fiscal territorial y su rol como centro comercial y bancario regional lo hacen atractivo para emprendedores e inversores — particularmente en comercio internacional, logística, bienes raíces o negocios remotos.",
     why_economy_faq2_q: "¿Tiene Panamá riesgo cambiario?", why_economy_faq2_a: "No. El Dólar estadounidense circula como moneda de curso legal junto al Balboa, que está vinculado 1:1 al dólar, por lo que no hay riesgo de conversión de moneda para inversores y jubilados con ingresos en USD.",
+    why_economy_faq3_q: "¿Qué industrias impulsan la economía de Panamá?", why_economy_faq3_a: "El Canal de Panamá y la logística relacionada, la banca internacional, el turismo, la construcción y el comercio de reexportación en zonas de libre comercio (especialmente la Zona Libre de Colón) están entre los principales pilares de la economía panameña.",
 
     why_location_page_title: "La Ubicación de Panamá 2026 — El Cruce de las Américas",
     why_location_page_desc: "Por qué importa la ubicación estratégica de Panamá: vuelos directos a EE.UU. y Europa, el Canal de Panamá, y fácil acceso al Pacífico y al Caribe. Consulta gratuita.",
@@ -344,6 +350,7 @@ export const translations = {
     why_location_fact4_title: "El Canal de Panamá", why_location_fact4_desc: "Una de las rutas de comercio marítimo más importantes del mundo atraviesa directamente el país, reforzando el rol de Panamá como centro logístico y comercial global.",
     why_location_faq1_q: "¿Qué tan lejos está Panamá de Estados Unidos?", why_location_faq1_a: "Los tiempos de vuelo van desde aproximadamente 3 horas (Miami) hasta unas 5-6 horas (Nueva York), dependiendo de tu ciudad de salida, haciendo de Panamá uno de los países latinoamericanos más accesibles desde EE.UU.",
     why_location_faq2_q: "¿Puedo volar directamente a Panamá desde Europa?", why_location_faq2_a: "Sí, Ciudad de Panamá tiene vuelos directos desde varias ciudades europeas importantes, incluyendo Madrid, además de una fuerte conectividad en las Américas a través del Aeropuerto Internacional de Tocumen.",
+    why_location_faq3_q: "¿Está Panamá en una zona de riesgo de huracanes o terremotos?", why_location_faq3_a: "Panamá está fuera de la ruta de huracanes del Atlántico, por lo que el riesgo de huracanes es mínimo. Como gran parte de la región, sí tiene algo de actividad sísmica, aunque las ciudades principales generalmente están construidas bajo estándares modernos.",
 
     why_living_page_title: "Vivir en Panamá 2026 — Estilo de Vida, Costos y Comunidades",
     why_living_page_desc: "Cómo es realmente la vida en Panamá: costo de vida, comunidades de expatriados, Ciudad de Panamá vs. pueblos de montaña y playa. Consulta gratuita con expertos en reubicación.",
@@ -354,6 +361,7 @@ export const translations = {
     why_living_fact4_title: "Variedad de Estilos de Vida", why_living_fact4_desc: "Ya sea que prefieras un rascacielos en el distrito financiero, una casa colonial en Casco Antiguo, un retiro de montaña en Boquete, o un pueblo de playa en cualquiera de las dos costas, Panamá ofrece opciones de vida distintas dentro de un país pequeño.",
     why_living_faq1_q: "¿Es Panamá accesible para vivir comparado con EE.UU.?", why_living_faq1_a: "Para la mayoría de las personas, sí. La vivienda, los víveres, salir a comer y el servicio doméstico suelen costar significativamente menos que en EE.UU. o Canadá, aunque los costos varían según la ciudad y el barrio — las zonas más exclusivas de Ciudad de Panamá pueden ser comparables a las principales ciudades de EE.UU.",
     why_living_faq2_q: "¿Hay una comunidad grande de expatriados en Panamá?", why_living_faq2_a: "Sí. Panamá ha atraído a jubilados, emprendedores y trabajadores remotos de EE.UU., Canadá y Europa durante décadas, con comunidades especialmente bien establecidas en Ciudad de Panamá, Boquete, Coronado y Bocas del Toro.",
+    why_living_faq3_q: "¿La atención médica en Panamá es suficientemente buena para jubilados?", why_living_faq3_a: "Ciudad de Panamá tiene varios hospitales privados modernos con especialistas formados en EE.UU., y muchos están acostumbrados a atender pacientes internacionales. La calidad y disponibilidad de atención médica fuera de las ciudades principales es más limitada, algo que los jubilados suelen considerar al elegir dónde establecerse.",
 
     visa2_for: "PARA CIUDADANOS DE 50+ PAÍSES", visa2_name: "Visa de Naciones Amigas",
     visa2_req1: "Ciudadano de uno de los 50 'Países Amigos' aprobados",

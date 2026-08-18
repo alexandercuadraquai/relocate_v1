@@ -36,7 +36,7 @@ const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
 const w = (key: string) => t[`why_${topicKey}_${key}`];
 const title = w('title');
 const facts = [1, 2, 3, 4].map(i => ({ title: w(`fact${i}_title`), desc: w(`fact${i}_desc`) }));
-const faqs = [1, 2].map(i => ({ q: w(`faq${i}_q`), a: w(`faq${i}_a`) }));
+const faqs = [1, 2, 3].map(i => ({ q: w(`faq${i}_q`), a: w(`faq${i}_a`) }));
 
 const ALL_TOPICS = ['climate', 'economy', 'location', 'living'] as const;
 
