@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceNav from '../components/ServiceNav.astro';
+import ServiceFooter from '../components/ServiceFooter.astro';
+import { translations, type Lang } from '../i18n/translations';
+
+const lang: Lang = 'en';
+const t = translations[lang];
+const canonical = 'https://relocatepa.com/pricing';
+const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
+
+const items = [1, 2, 3, 4, 5, 6].map(i => ({
+  name: t[`pricing_item${i}_name` as keyof typeof t],
+  price: t[`pricing_item${i}_price` as keyof typeof t],
+  note: t[`pricing_item${i}_note` as keyof typeof t],
+}));
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": "https://relocatepa.com/" },
+    { "@type": "ListItem", "position": 2, "name": t.nav_pricing, "item": canonical }
+  ]
+};
+---
+
+<Layout title={t.pricing_page_title} description={t.pricing_page_desc} lang={lang} canonical={canonical} enHref={canonical} esHref="https://relocatepa.com/es/precios">
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <ServiceNav lang={lang} altHref="/es/precios" />
+
+  <main>
+    <section class="service-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href="/">{t.svc_breadcrumb_home}</a> ›
+          <span>{t.nav_pricing}</span>
+        </p>
+        <h1>{t.pricing_hero_title}</h1>
+        <p class="service-intro">{t.pricing_hero_desc}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+      </div>
+    </section>
+
+    <section class="visa-programs">
+      <div class="container">
+        <div class="visa-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          {items.map(item => (
+            <div class="visa-card price-card">
+              <div class="visa-card-header">
+                <h3>{item.name}</h3>
+              </div>
+              <div class="visa-card-body">
+                <p class="price-card-price">{item.price}</p>
+                <p class="price-card-note">{item.note}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p class="pricing-disclaimer-note">{t.pricing_disclaimer}</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">{t.svc_cta_title}</h2>
+        <p class="section-desc">{t.svc_cta_desc}</p>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+        <a href="/" class="back-home-link">{t.svc_back_home}</a>
+      </div>
+    </section>
+  </main>
+
+  <ServiceFooter lang={lang} />
+</Layout>

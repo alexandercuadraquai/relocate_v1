@@ -18,6 +18,8 @@ const canonical = `https://relocatepa.com/es`;
         <a href="/es#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
         <a href="/es#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
         <a href="/es#services" data-i18n="nav_services">{t.nav_services}</a>
+        <a href="/es/precios" data-i18n="nav_pricing">{t.nav_pricing}</a>
+        <a href="/es/blog" data-i18n="nav_blog">{t.nav_blog}</a>
         <a href="/es#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
           <a href="/" class="lang-btn">EN</a>
@@ -47,6 +49,7 @@ const canonical = `https://relocatepa.com/es`;
         <a href="/es#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
       <p class="trust-phrase" data-i18n="trust_phrase">{t.trust_phrase}</p>
+      <p class="pricing-teaser" data-i18n="pricing_teaser">{t.pricing_teaser}</p>
     </div>
   </section>
 
@@ -362,6 +365,14 @@ const canonical = `https://relocatepa.com/es`;
     </div>
   </section>
 
+  <section class="dual-license-banner" id="dual-license">
+    <div class="container">
+      <p class="dual-license-badge animate-on-scroll">⚖️ 🏠 {t.dual_license_badge}</p>
+      <h2 class="section-title animate-on-scroll">{t.dual_license_title}</h2>
+      <p class="section-desc animate-on-scroll">{t.dual_license_desc}</p>
+    </div>
+  </section>
+
   <!-- Testimonios -->
   <section class="testimonials-section" id="testimonials">
     <div class="container">
@@ -405,6 +416,16 @@ const canonical = `https://relocatepa.com/es`;
               <span class="author-visa">{t.t3_visa}</span>
             </div>
           </div>
+        </div>
+        <!-- TODO: Reemplazar con testimonios reales verificados de clientes. No agregar reseñas falsas al schema Review de Layout.astro. -->
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">Más historias de clientes próximamente.</p>
+        </div>
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">Más historias de clientes próximamente.</p>
+        </div>
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">Más historias de clientes próximamente.</p>
         </div>
       </div>
     </div>
@@ -487,6 +508,15 @@ const canonical = `https://relocatepa.com/es`;
           </button>
           <div class="faq-answer" id="faq-a8">
             <p data-i18n="faq8_a">{t.faq8_a}</p>
+          </div>
+        </div>
+
+        <div class="related-reading animate-on-scroll" style="margin-top: 48px; text-align: center;">
+          <h3 style="margin-bottom: 16px;">Lecturas Relacionadas</h3>
+          <div class="related-visas-links">
+            <a href="/es/blog/friendly-nations-visa-guide-2026" class="btn btn-outline">Visa de Naciones Amigas 2026: Guía Completa</a>
+            <a href="/es/blog/pensionado-visa-panama-guide" class="btn btn-outline">Visa de Pensionado: Requisitos, Costo y Proceso</a>
+            <a href="/es/blog/cost-of-living-panama-city-2026" class="btn btn-outline">Costo de Vida en Ciudad de Panamá 2026</a>
           </div>
         </div>
 
@@ -574,6 +604,8 @@ const canonical = `https://relocatepa.com/es`;
           <a href="/es#visa-programs">{t.nav_visa}</a>
           <a href="/es#legal">{t.nav_legal}</a>
           <a href="/es#services">{t.nav_services}</a>
+          <a href="/es/precios">{t.nav_pricing}</a>
+          <a href="/es/blog">{t.nav_blog}</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_contact">{t.footer_contact}</h4>

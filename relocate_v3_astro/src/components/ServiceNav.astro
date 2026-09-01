@@ -23,6 +23,8 @@ const home = lang === 'es' ? '/es' : '/';
       <a href={`${home}#corporations`}>{t.nav_corp}</a>
       <a href={`${home}#visa-programs`}>{t.nav_visa}</a>
       <a href={`${home}#services`}>{t.nav_services}</a>
+      <a href={lang === 'es' ? '/es/precios' : '/pricing'}>{t.nav_pricing}</a>
+      <a href={lang === 'es' ? '/es/blog' : '/blog'}>{t.nav_blog}</a>
       <a href={`${home}#contact`} class="nav-cta">{t.nav_contact}</a>
       <div class="lang-toggle">
         <a href={lang === 'en' ? Astro.url.pathname : altHref} class:list={["lang-btn", { active: lang === 'en' }]}>EN</a>

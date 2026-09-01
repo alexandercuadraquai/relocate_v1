@@ -26,6 +26,8 @@ const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
         <a href={`${home}#visa-programs`}>{t.nav_visa}</a>
         <a href={`${home}#legal`}>{t.nav_legal}</a>
         <a href={`${home}#services`}>{t.nav_services}</a>
+        <a href={lang === 'es' ? '/es/precios' : '/pricing'}>{t.nav_pricing}</a>
+        <a href={lang === 'es' ? '/es/blog' : '/blog'}>{t.nav_blog}</a>
       </div>
       <div class="footer-col">
         <h4>{t.footer_contact}</h4>

@@ -19,6 +19,8 @@ const canonical = 'https://relocatepa.com';
         <a href="#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
         <a href="#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
         <a href="#services" data-i18n="nav_services">{t.nav_services}</a>
+        <a href="/pricing" data-i18n="nav_pricing">{t.nav_pricing}</a>
+        <a href="/blog" data-i18n="nav_blog">{t.nav_blog}</a>
         <a href="#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
           <a href="/" class="lang-btn active">EN</a>
@@ -48,6 +50,7 @@ const canonical = 'https://relocatepa.com';
         <a href="#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
       <p class="trust-phrase" data-i18n="trust_phrase">{t.trust_phrase}</p>
+      <p class="pricing-teaser" data-i18n="pricing_teaser">{t.pricing_teaser}</p>
     </div>
   </section>
 
@@ -364,6 +367,14 @@ const canonical = 'https://relocatepa.com';
     </div>
   </section>
 
+  <section class="dual-license-banner" id="dual-license">
+    <div class="container">
+      <p class="dual-license-badge animate-on-scroll">⚖️ 🏠 {t.dual_license_badge}</p>
+      <h2 class="section-title animate-on-scroll">{t.dual_license_title}</h2>
+      <p class="section-desc animate-on-scroll">{t.dual_license_desc}</p>
+    </div>
+  </section>
+
   <!-- Testimonials -->
   <section class="testimonials-section" id="testimonials">
     <div class="container">
@@ -407,6 +418,16 @@ const canonical = 'https://relocatepa.com';
               <span class="author-visa">{t.t3_visa}</span>
             </div>
           </div>
+        </div>
+        <!-- TODO: Replace these 3 slots with real client testimonials once collected. Do NOT add fabricated reviews to Layout.astro's review schema. -->
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">More client stories coming soon.</p>
+        </div>
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">More client stories coming soon.</p>
+        </div>
+        <div class="testimonial-card testimonial-card--placeholder animate-on-scroll">
+          <p class="testimonial-placeholder-text">More client stories coming soon.</p>
         </div>
       </div>
     </div>
@@ -489,6 +510,15 @@ const canonical = 'https://relocatepa.com';
           </button>
           <div class="faq-answer" id="faq-a8">
             <p data-i18n="faq8_a">{t.faq8_a}</p>
+          </div>
+        </div>
+
+        <div class="related-reading animate-on-scroll" style="margin-top: 48px; text-align: center;">
+          <h3 style="margin-bottom: 16px;">Related Reading</h3>
+          <div class="related-visas-links">
+            <a href="/blog/friendly-nations-visa-guide-2026" class="btn btn-outline">Friendly Nations Visa 2026: Complete Guide</a>
+            <a href="/blog/pensionado-visa-panama-guide" class="btn btn-outline">Pensionado Visa: Requirements, Cost & Process</a>
+            <a href="/blog/cost-of-living-panama-city-2026" class="btn btn-outline">Cost of Living in Panama City 2026</a>
           </div>
         </div>
 
@@ -576,6 +606,8 @@ const canonical = 'https://relocatepa.com';
           <a href="#visa-programs">{t.nav_visa}</a>
           <a href="#legal">{t.nav_legal}</a>
           <a href="#services">{t.nav_services}</a>
+          <a href="/pricing">{t.nav_pricing}</a>
+          <a href="/blog">{t.nav_blog}</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_contact">{t.footer_contact}</h4>

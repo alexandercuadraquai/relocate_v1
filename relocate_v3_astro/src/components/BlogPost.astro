@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceNav from './ServiceNav.astro';
+import ServiceFooter from './ServiceFooter.astro';
+import { translations, type Lang } from '../i18n/translations';
+import { render, type CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+
+const { entry } = Astro.props;
+const { lang, slug, title, metaTitle, metaDescription, publishDate, updatedDate, faqs } = entry.data;
+const t = translations[lang as Lang];
+const { Content } = await render(entry);
+
+const home = lang === 'es' ? '/es' : '';
+const blogSegment = lang === 'es' ? '/es/blog' : '/blog';
+const canonical = `https://relocatepa.com${blogSegment}/${slug}`;
+const enHref = `https://relocatepa.com/blog/${slug}`;
+const esHref = `https://relocatepa.com/es/blog/${slug}`;
+const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
+
+// Author is the firm (Organization), not a named individual — no team/bio page exists on this site.
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": metaDescription,
+  "datePublished": publishDate.toISOString(),
+  "dateModified": updatedDate.toISOString(),
+  "author": { "@id": "https://relocatepa.com/#organization" },
+  "publisher": { "@id": "https://relocatepa.com/#organization" },
+  "url": canonical
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home || '/'}` },
+    { "@type": "ListItem", "position": 2, "name": t.nav_blog, "item": `https://relocatepa.com${blogSegment}` },
+    { "@type": "ListItem", "position": 3, "name": title, "item": canonical }
+  ]
+};
+---
+
+<Layout title={metaTitle} description={metaDescription} lang={lang} canonical={canonical} enHref={enHref} esHref={esHref}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <ServiceNav lang={lang as Lang} altHref={lang === 'es' ? `/blog/${slug}` : `/es/blog/${slug}`} />
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href={home || '/'}>{t.svc_breadcrumb_home}</a> ›
+          <a href={blogSegment}>{t.nav_blog}</a> ›
+          <span>{title}</span>
+        </p>
+        <h1>{title}</h1>
+        <p class="blog-post-meta">{t.blog_by_author} · {t.blog_last_updated}: {updatedDate.toLocaleDateString(lang === 'es' ? 'es-PA' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <div class="blog-post-content">
+          <Content />
+        </div>
+        <a href={waLink} class="btn btn-primary" target="_blank" rel="noopener">{t.contact_cta}</a>
+        <a href={blogSegment} class="back-home-link">{t.blog_back_to_blog}</a>
+      </div>
+    </article>
+  </main>
+
+  <ServiceFooter lang={lang as Lang} />
+</Layout>

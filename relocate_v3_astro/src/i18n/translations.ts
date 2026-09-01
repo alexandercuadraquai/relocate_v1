@@ -4,6 +4,7 @@ export const translations = {
     meta_description: "Panama immigration attorneys with 20+ years experience. Pensionado Visa, Friendly Nations Visa, corporations & real estate closings. Free 15-min consultation.",
     nav_why: "Why Panama", nav_visa: "Visa Options", nav_legal: "Legal Info",
     nav_services: "Services", nav_contact: "Contact Us", nav_corp: "Corporations",
+    nav_pricing: "Pricing", nav_blog: "Blog",
 
     hero_label: "YOUR NEW LIFE AWAITS",
     hero_title_1: "Relocate to", hero_title_2: "Panama",
@@ -206,6 +207,10 @@ export const translations = {
     wa_text: "Hello,%20I%20would%20like%20to%20schedule%20a%20free%2015-minute%20consultation",
 
     trust_phrase: "Your trusted partner to start a new life in the ideal destination.",
+    pricing_teaser: "Pensionado Visa from $1,500 · Friendly Nations from $2,000 · Free Initial Consultation",
+    dual_license_badge: "DOUBLE LICENSED",
+    dual_license_title: "The Only Firm in Panama Where Your Attorney Is Also a Licensed Real Estate Broker",
+    dual_license_desc: "One point of contact for your visa, your corporation, and your property purchase — no need to coordinate between separate lawyers and brokers. 20+ years of combined legal and real estate experience under one roof.",
 
     stat1_number: "20+", stat1_label: "Years of Experience",
     stat2_number: "200+", stat2_label: "Families Relocated",
@@ -252,6 +257,26 @@ export const translations = {
     re_title: "Real Estate Closings in Panama",
     re_desc: "We provide comprehensive legal support for real estate closings in Panama, ensuring every transaction is handled efficiently, securely, and in full compliance with local regulations. Our team manages the entire process—from due diligence and contract review to coordination with banks, escrow agents, and public registries—protecting your interests at every stage. Whether you are buying, selling, or investing, we deliver a smooth and transparent closing experience tailored to both local and international clients.",
     
+    pricing_page_title: "Panama Relocation Pricing 2026 — Visa, Corporation & Real Estate Fees",
+    pricing_page_desc: "Transparent starting legal fees for Panama visas, corporation formation, and real estate closings. Free 15-minute consultation to confirm your exact quote.",
+    pricing_hero_title: "Simple, Transparent Pricing",
+    pricing_hero_desc: "Every case is different, so we start every relationship with a free consultation to confirm your exact fee. These are our starting legal fee ranges so you can plan ahead.",
+    pricing_disclaimer: "Prices shown are starting legal fees only and do not include government fees, translations, apostilles, or third-party costs, which vary by case. Figures are pending final legal/fee review and subject to change — confirm your exact quote during your free consultation.",
+    pricing_item1_name: "Pensionado Visa", pricing_item1_price: "Legal fees from $1,500", pricing_item1_note: "Government fees additional",
+    pricing_item2_name: "Friendly Nations Visa", pricing_item2_price: "Legal fees from $2,000", pricing_item2_note: "Investment requirements apply",
+    pricing_item3_name: "Qualified Investor Visa", pricing_item3_price: "Legal fees from $3,500", pricing_item3_note: "Based on investment category chosen",
+    pricing_item4_name: "Self-Economic Solvency Visa", pricing_item4_price: "Legal fees from $2,000", pricing_item4_note: "Plus $2,000 per dependent",
+    pricing_item5_name: "Corporation Setup", pricing_item5_price: "From $800", pricing_item5_note: "Panama S.A. or Private Interest Foundation",
+    pricing_item6_name: "Real Estate Closing", pricing_item6_price: "Included when using our brokerage services", pricing_item6_note: "Ask us for standalone closing rates",
+
+    blog_page_title: "Panama Relocation Blog — Visas, Costs & Expat Guides",
+    blog_page_desc: "In-depth guides on Panama visas, cost of living, and relocation, written by the Relocate PA team with 20+ years of experience.",
+    blog_hero_title: "Panama Relocation Guides",
+    blog_read_more: "Read Guide",
+    blog_back_to_blog: "← Back to Blog",
+    blog_last_updated: "Last updated",
+    blog_by_author: "By Relocate PA",
+
     contact_form_name: "Full Name",
     contact_form_email: "Email Address",
     contact_form_msg: "Your Message",
@@ -263,6 +288,7 @@ export const translations = {
     meta_description: "Abogados de inmigración en Panamá con más de 20 años de experiencia. Visa Pensionado, Naciones Amigas, sociedades y bienes raíces. Consulta gratis 15 min.",
     nav_why: "¿Por qué Panamá?", nav_visa: "Opciones de Visa", nav_legal: "Info Legal",
     nav_services: "Servicios", nav_contact: "Contáctenos", nav_corp: "Sociedades",
+    nav_pricing: "Precios", nav_blog: "Blog",
     
     hero_label: "TU NUEVA VIDA TE ESPERA",
     hero_title_1: "Tu Nueva", hero_title_2: "Vida en Panamá",
@@ -465,6 +491,10 @@ export const translations = {
     wa_text: "Hola,%20me%20gustar%C3%ADa%20agendar%20la%20consulta%20gratuita%20de%2015%20minutos",
 
     trust_phrase: "Tu aliado de confianza para comenzar una nueva vida en el destino ideal.",
+    pricing_teaser: "Visa de Pensionado desde $1,500 · Naciones Amigas desde $2,000 · Consulta Inicial Gratuita",
+    dual_license_badge: "DOBLE LICENCIA",
+    dual_license_title: "La Única Firma en Panamá Donde Tu Abogado También Es Corredor de Bienes Raíces Licenciado",
+    dual_license_desc: "Un solo punto de contacto para tu visa, tu sociedad y tu compra de propiedad — sin necesidad de coordinar entre abogados y corredores separados. Más de 20 años de experiencia legal e inmobiliaria combinada bajo un mismo techo.",
 
     stat1_number: "20+", stat1_label: "Años de Experiencia",
     stat2_number: "200+", stat2_label: "Familias Reubicadas",
@@ -511,6 +541,26 @@ export const translations = {
     re_title: "Cierres de Bienes Raíces en Panamá",
     re_desc: "Brindamos apoyo legal integral para cierres de bienes raíces en Panamá, asegurando que cada transacción se maneje de manera eficiente, segura y en pleno cumplimiento de las regulaciones locales. Nuestro equipo gestiona todo el proceso, desde la debida diligencia y revisión de contratos hasta la coordinación con bancos, agentes de custodia (escrow) y registros públicos, protegiendo sus intereses en cada etapa. Ya sea que esté comprando, vendiendo o invirtiendo, ofrecemos una experiencia de cierre fluida y transparente adaptada a clientes locales e internacionales.",
     
+    pricing_page_title: "Precios de Reubicación en Panamá 2026 — Visas, Sociedades y Bienes Raíces",
+    pricing_page_desc: "Honorarios legales iniciales transparentes para visas, formación de sociedades y cierres de bienes raíces en Panamá. Consulta gratuita de 15 minutos para confirmar tu cotización exacta.",
+    pricing_hero_title: "Precios Simples y Transparentes",
+    pricing_hero_desc: "Cada caso es diferente, por eso comenzamos cada relación con una consulta gratuita para confirmar tu honorario exacto. Estos son nuestros rangos de honorarios legales iniciales para que puedas planificar.",
+    pricing_disclaimer: "Los precios mostrados son solo honorarios legales iniciales y no incluyen tasas gubernamentales, traducciones, apostillas ni costos de terceros, que varían según el caso. Las cifras están pendientes de revisión legal/de honorarios final y sujetas a cambio — confirma tu cotización exacta durante tu consulta gratuita.",
+    pricing_item1_name: "Visa de Pensionado", pricing_item1_price: "Honorarios legales desde $1,500", pricing_item1_note: "Tasas gubernamentales adicionales",
+    pricing_item2_name: "Visa de Naciones Amigas", pricing_item2_price: "Honorarios legales desde $2,000", pricing_item2_note: "Aplican requisitos de inversión",
+    pricing_item3_name: "Visa de Inversionista Calificado", pricing_item3_price: "Honorarios legales desde $3,500", pricing_item3_note: "Según la categoría de inversión elegida",
+    pricing_item4_name: "Visa de Solvencia Económica Propia", pricing_item4_price: "Honorarios legales desde $2,000", pricing_item4_note: "Más $2,000 por cada dependiente",
+    pricing_item5_name: "Formación de Sociedad", pricing_item5_price: "Desde $800", pricing_item5_note: "S.A. panameña o Fundación de Interés Privado",
+    pricing_item6_name: "Cierre de Bienes Raíces", pricing_item6_price: "Incluido al usar nuestros servicios de corretaje", pricing_item6_note: "Consúltanos por tarifas de cierre independientes",
+
+    blog_page_title: "Blog de Reubicación en Panamá — Visas, Costos y Guías para Expatriados",
+    blog_page_desc: "Guías detalladas sobre visas panameñas, costo de vida y reubicación, escritas por el equipo de Relocate PA con más de 20 años de experiencia.",
+    blog_hero_title: "Guías para Mudarse a Panamá",
+    blog_read_more: "Leer Guía",
+    blog_back_to_blog: "← Volver al Blog",
+    blog_last_updated: "Última actualización",
+    blog_by_author: "Por Relocate PA",
+
     contact_form_name: "Nombre Completo",
     contact_form_email: "Correo Electrónico",
     contact_form_msg: "Tu Mensaje",

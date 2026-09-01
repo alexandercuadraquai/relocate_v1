@@ -8,7 +8,14 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Exclude transactional thank-you pages — no SEO/citation value, shouldn't be indexed.
-      filter: (page) => !page.includes('/thanks') && !page.includes('/gracias')
+      filter: (page) => !page.includes('/thanks') && !page.includes('/gracias'),
+      i18n: {
+        defaultLocale: 'en',
+        locales: {
+          en: 'en-US',
+          es: 'es-PA'
+        }
+      }
     })
   ]
 });
