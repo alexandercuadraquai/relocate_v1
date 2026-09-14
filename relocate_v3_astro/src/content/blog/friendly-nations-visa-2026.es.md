@@ -13,7 +13,7 @@ faqs:
   - q: "¿Qué países están en la lista de Naciones Amigas de Panamá?"
     a: "Más de 50 países califican, incluyendo Estados Unidos, Canadá, la mayoría de la Unión Europea y muchas naciones latinoamericanas. Confirma la elegibilidad de tu país específico durante una consulta gratuita."
   - q: "¿Cuánto cuesta la Visa de Naciones Amigas en total?"
-    a: "Los honorarios legales para la Visa de Naciones Amigas comienzan desde $2,000, más las tasas gubernamentales y el costo de establecer tu vínculo económico (empleo, registro de negocio o un depósito bancario de $5,000+). Consulta nuestro desglose de precios para conocer los rangos actuales."
+    a: "Los honorarios legales para la Visa de Naciones Amigas comienzan desde $2,000, más las tasas gubernamentales y el costo de establecer tu vínculo económico (empleo, registro de negocio o un depósito bancario de $5,000+). Confirmamos tu cotización exacta durante una consulta gratuita."
   - q: "¿Cuánto tiempo toma el proceso de la Visa de Naciones Amigas?"
     a: "El procesamiento generalmente toma de 3 a 6 meses desde la presentación, dependiendo de la preparación de los documentos y la carga de trabajo actual de la oficina de inmigración."
 ---
@@ -72,7 +72,7 @@ La ruta más simple para muchos solicitantes es un depósito a plazo fijo de al 
 
 ## Costo de la Visa de Naciones Amigas
 
-Los honorarios legales para la Visa de Naciones Amigas comienzan desde **$2,000** (consulta nuestra [guía de precios completa](/es/precios) para otras categorías de visas y servicios), además de las tasas gubernamentales de presentación y el costo de tu vínculo económico elegido — por ejemplo, el depósito bancario de $5,000+ si eliges esa ruta. Estos son nuestros propios honorarios legales iniciales publicados; tu cotización exacta se confirma durante tu consulta gratuita según tu caso específico.
+Los honorarios legales para la Visa de Naciones Amigas comienzan desde **$2,000**, además de las tasas gubernamentales de presentación y el costo de tu vínculo económico elegido — por ejemplo, el depósito bancario de $5,000+ si eliges esa ruta. Este es nuestro propio honorario legal inicial publicado; tu cotización exacta se confirma durante tu consulta gratuita según tu caso específico.
 
 ## Visa de Naciones Amigas vs. Otras Visas de Residencia en Panamá
 
@@ -91,7 +91,7 @@ Más de 50 países califican, incluyendo Estados Unidos, Canadá, la mayoría de
 
 ### ¿Cuánto cuesta la Visa de Naciones Amigas en total?
 
-Los honorarios legales para la Visa de Naciones Amigas comienzan desde $2,000, más las tasas gubernamentales y el costo de establecer tu vínculo económico (empleo, registro de negocio o un depósito bancario de $5,000+). Consulta nuestro desglose de precios para conocer los rangos actuales.
+Los honorarios legales para la Visa de Naciones Amigas comienzan desde $2,000, más las tasas gubernamentales y el costo de establecer tu vínculo económico (empleo, registro de negocio o un depósito bancario de $5,000+). Confirmamos tu cotización exacta durante una consulta gratuita.
 
 ### ¿Cuánto tiempo toma el proceso de la Visa de Naciones Amigas?
 
@@ -99,4 +99,4 @@ El procesamiento generalmente toma de 3 a 6 meses desde la presentación, depend
 
 ## ¿Listo para Solicitar tu Visa de Naciones Amigas?
 
-Nuestro equipo ha procesado solicitudes de Visa de Naciones Amigas para clientes de docenas de países durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es/precios) para confirmar tu elegibilidad y obtener tu cotización exacta, o lee nuestra guía completa en la [página del programa de Visa de Naciones Amigas](/es/visas/friendly-nations-visa) para conocer los requisitos oficiales y la lista de beneficios.
+Nuestro equipo ha procesado solicitudes de Visa de Naciones Amigas para clientes de docenas de países durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es#contact) para confirmar tu elegibilidad y obtener tu cotización exacta, o lee nuestra guía completa en la [página del programa de Visa de Naciones Amigas](/es/visas/friendly-nations-visa) para conocer los requisitos oficiales y la lista de beneficios.

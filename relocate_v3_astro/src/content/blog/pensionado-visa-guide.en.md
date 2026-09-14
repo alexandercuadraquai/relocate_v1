@@ -15,7 +15,7 @@ faqs:
   - q: "Can my spouse be included on my Pensionado Visa application?"
     a: "Yes, spouses and dependents can generally be included in the same application, though additional income or documentation requirements may apply depending on your specific case."
   - q: "How much does the Pensionado Visa cost in total?"
-    a: "Legal fees start from $1,500, plus government fees which are additional. See our full pricing breakdown for current ranges before booking your consultation."
+    a: "Legal fees start from $1,500, plus government fees which are additional. We'll confirm your exact quote during a free consultation."
 ---
 
 **Panama's Pensionado Visa grants permanent residency to retirees with a verified lifetime pension of at least $1,000/month** — and comes with some of the best retiree discounts in the world, from 50% off entertainment to 25% off airfare. Here's exactly what it requires, what it costs, and how the process works.
@@ -62,7 +62,7 @@ These are part of Panama's broader retiree discount program; our team will confi
 
 ## How Much Does the Pensionado Visa Cost?
 
-Legal fees for the Pensionado Visa start from **$1,500** (government fees additional) — see our [full pricing guide](/pricing) for other services. This is our own published starting legal fee; the government filing fees and any translation/apostille costs are separate and will be confirmed for your specific case.
+Legal fees for the Pensionado Visa start from **$1,500** (government fees additional). This is our own published starting legal fee; the government filing fees and any translation/apostille costs are separate and will be confirmed for your specific case.
 
 ## Pensionado Visa vs. Other Panama Residency Programs
 
@@ -85,8 +85,8 @@ Yes, spouses and dependents can generally be included in the same application, t
 
 ### How much does the Pensionado Visa cost in total?
 
-Legal fees start from $1,500, plus government fees which are additional. See our full pricing breakdown for current ranges before booking your consultation.
+Legal fees start from $1,500, plus government fees which are additional. We'll confirm your exact quote during a free consultation.
 
 ## Ready to Retire in Panama?
 
-Our team has guided retirees from the US, Canada, and Europe through the Pensionado Visa process for over 20 years. [Book a free 15-minute consultation](/pricing) to confirm your eligibility, or visit our [Pensionado Visa program page](/visas/pensionado-visa) for the official requirements and benefits summary.
+Our team has guided retirees from the US, Canada, and Europe through the Pensionado Visa process for over 20 years. [Book a free 15-minute consultation](/#contact) to confirm your eligibility, or visit our [Pensionado Visa program page](/visas/pensionado-visa) for the official requirements and benefits summary.

@@ -15,7 +15,7 @@ faqs:
   - q: "¿Puede mi cónyuge incluirse en mi solicitud de Visa de Pensionado?"
     a: "Sí, generalmente los cónyuges y dependientes pueden incluirse en la misma solicitud, aunque pueden aplicar requisitos adicionales de ingresos o documentación según tu caso específico."
   - q: "¿Cuánto cuesta la Visa de Pensionado en total?"
-    a: "Los honorarios legales comienzan desde $1,500, más las tasas gubernamentales que son adicionales. Consulta nuestro desglose de precios para conocer los rangos actuales antes de reservar tu consulta."
+    a: "Los honorarios legales comienzan desde $1,500, más las tasas gubernamentales que son adicionales. Confirmamos tu cotización exacta durante una consulta gratuita."
 ---
 
 **La Visa de Pensionado de Panamá otorga residencia permanente a jubilados con una pensión vitalicia verificada de al menos $1,000/mes** — y viene con algunos de los mejores descuentos para jubilados del mundo, desde 50% en entretenimiento hasta 25% en boletos aéreos. Aquí te explicamos exactamente qué requiere, cuánto cuesta y cómo funciona el proceso.
@@ -62,7 +62,7 @@ Estos forman parte del programa más amplio de descuentos para jubilados de Pana
 
 ## ¿Cuánto Cuesta la Visa de Pensionado?
 
-Los honorarios legales para la Visa de Pensionado comienzan desde **$1,500** (tasas gubernamentales adicionales) — consulta nuestra [guía de precios completa](/es/precios) para otros servicios. Este es nuestro propio honorario legal inicial publicado; las tasas gubernamentales de presentación y cualquier costo de traducción/apostilla son adicionales y se confirmarán para tu caso específico.
+Los honorarios legales para la Visa de Pensionado comienzan desde **$1,500** (tasas gubernamentales adicionales). Este es nuestro propio honorario legal inicial publicado; las tasas gubernamentales de presentación y cualquier costo de traducción/apostilla son adicionales y se confirmarán para tu caso específico.
 
 ## Visa de Pensionado vs. Otras Visas de Residencia en Panamá
 
@@ -85,8 +85,8 @@ Sí, generalmente los cónyuges y dependientes pueden incluirse en la misma soli
 
 ### ¿Cuánto cuesta la Visa de Pensionado en total?
 
-Los honorarios legales comienzan desde $1,500, más las tasas gubernamentales que son adicionales. Consulta nuestro desglose de precios para conocer los rangos actuales antes de reservar tu consulta.
+Los honorarios legales comienzan desde $1,500, más las tasas gubernamentales que son adicionales. Confirmamos tu cotización exacta durante una consulta gratuita.
 
 ## ¿Listo para Jubilarte en Panamá?
 
-Nuestro equipo ha guiado a jubilados de Estados Unidos, Canadá y Europa a través del proceso de la Visa de Pensionado durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es/precios) para confirmar tu elegibilidad, o visita la [página del programa de Visa de Pensionado](/es/visas/pensionado-visa) para conocer los requisitos oficiales y el resumen de beneficios.
+Nuestro equipo ha guiado a jubilados de Estados Unidos, Canadá y Europa a través del proceso de la Visa de Pensionado durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es#contact) para confirmar tu elegibilidad, o visita la [página del programa de Visa de Pensionado](/es/visas/pensionado-visa) para conocer los requisitos oficiales y el resumen de beneficios.

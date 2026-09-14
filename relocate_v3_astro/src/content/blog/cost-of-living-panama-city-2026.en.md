@@ -82,4 +82,4 @@ Indirectly, yes — foreign-sourced income such as pensions, dividends, and remo
 
 ## Planning Your Move to Panama City?
 
-Understanding your real monthly budget is the first step in planning a successful relocation. [Book a free 15-minute consultation](/pricing) with our team to talk through your specific situation, or explore our [Panama residency visa options](/#visa-programs) to find the right path for you.
+Understanding your real monthly budget is the first step in planning a successful relocation. [Book a free 15-minute consultation](/#contact) with our team to talk through your specific situation, or explore our [Panama residency visa options](/#visa-programs) to find the right path for you.

@@ -82,4 +82,4 @@ Indirectamente, sí — los ingresos de fuente extranjera como pensiones, divide
 
 ## ¿Planeando tu Mudanza a Ciudad de Panamá?
 
-Entender tu presupuesto mensual real es el primer paso para planificar una reubicación exitosa. [Reserva una consulta gratuita de 15 minutos](/es/precios) con nuestro equipo para conversar sobre tu situación específica, o explora nuestras [opciones de visa de residencia en Panamá](/es#visa-programs) para encontrar el camino correcto para ti.
+Entender tu presupuesto mensual real es el primer paso para planificar una reubicación exitosa. [Reserva una consulta gratuita de 15 minutos](/es#contact) con nuestro equipo para conversar sobre tu situación específica, o explora nuestras [opciones de visa de residencia en Panamá](/es#visa-programs) para encontrar el camino correcto para ti.

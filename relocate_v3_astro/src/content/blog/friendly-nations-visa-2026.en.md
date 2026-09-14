@@ -13,7 +13,7 @@ faqs:
   - q: "Which countries are on Panama's Friendly Nations list?"
     a: "Over 50 countries qualify, including the United States, Canada, most of the European Union, and many Latin American nations. Confirm your specific country's eligibility during a free consultation."
   - q: "How much does the Friendly Nations Visa cost in total?"
-    a: "Legal fees for the Friendly Nations Visa start from $2,000, plus government fees and the cost of establishing your economic tie (employment, business registration, or a $5,000+ bank deposit). See our full pricing breakdown for current ranges."
+    a: "Legal fees for the Friendly Nations Visa start from $2,000, plus government fees and the cost of establishing your economic tie (employment, business registration, or a $5,000+ bank deposit). We'll confirm your exact quote during a free consultation."
   - q: "How long does the Friendly Nations Visa process take?"
     a: "Processing typically takes 3 to 6 months from filing, depending on document readiness and current immigration office workload."
 ---
@@ -72,7 +72,7 @@ The simplest route for many applicants is a fixed-term deposit of at least $5,00
 
 ## Cost of the Friendly Nations Visa
 
-Legal fees for the Friendly Nations Visa start from **$2,000** (see our [full pricing guide](/pricing) for other visa and service categories), in addition to government filing fees and the cost of your chosen economic tie — for example, the $5,000+ bank deposit if you choose that route. These are our own published starting legal fees; your exact quote is confirmed during your free consultation based on your specific case.
+Legal fees for the Friendly Nations Visa start from **$2,000**, in addition to government filing fees and the cost of your chosen economic tie — for example, the $5,000+ bank deposit if you choose that route. This is our own published starting legal fee; your exact quote is confirmed during your free consultation based on your specific case.
 
 ## Friendly Nations Visa vs. Other Panama Residency Programs
 
@@ -91,7 +91,7 @@ Over 50 countries qualify, including the United States, Canada, most of the Euro
 
 ### How much does the Friendly Nations Visa cost in total?
 
-Legal fees for the Friendly Nations Visa start from $2,000, plus government fees and the cost of establishing your economic tie (employment, business registration, or a $5,000+ bank deposit). See our full pricing breakdown for current ranges.
+Legal fees for the Friendly Nations Visa start from $2,000, plus government fees and the cost of establishing your economic tie (employment, business registration, or a $5,000+ bank deposit). We'll confirm your exact quote during a free consultation.
 
 ### How long does the Friendly Nations Visa process take?
 
@@ -99,4 +99,4 @@ Processing typically takes 3 to 6 months from filing, depending on document read
 
 ## Ready to Apply for Your Friendly Nations Visa?
 
-Our team has processed Friendly Nations Visa applications for clients from dozens of countries over 20+ years. [Book a free 15-minute consultation](/pricing) to confirm your eligibility and get your exact fee quote, or read our full guide to the [Friendly Nations Visa program page](/visas/friendly-nations-visa) for the official requirements and benefits list.
+Our team has processed Friendly Nations Visa applications for clients from dozens of countries over 20+ years. [Book a free 15-minute consultation](/#contact) to confirm your eligibility and get your exact fee quote, or read our full guide to the [Friendly Nations Visa program page](/visas/friendly-nations-visa) for the official requirements and benefits list.

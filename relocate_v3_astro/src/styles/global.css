@@ -474,15 +474,7 @@ section:nth-child(even) { background-color: var(--bg-cream); }
   .wa-float { padding: 14px; border-radius: 50%; bottom: 24px; right: 24px; }
 }
 
-/* --- SEO/Pricing/Blog additions --- */
-
-.pricing-teaser {
-  margin-top: 16px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--emerald-dark);
-  letter-spacing: 0.3px;
-}
+/* --- SEO/Blog additions --- */
 
 .dual-license-banner {
   background: var(--bg-cream);
@@ -515,28 +507,6 @@ section:nth-child(even) { background-color: var(--bg-cream); }
   color: var(--text-light);
   font-style: italic;
   text-align: center;
-}
-
-.price-card-price {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--emerald-dark);
-  margin-bottom: 6px;
-}
-
-.price-card-note {
-  color: var(--text-light);
-  font-size: 0.9rem;
-}
-
-.pricing-disclaimer-note {
-  margin-top: 32px;
-  font-size: 0.85rem;
-  color: var(--text-light);
-  text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .blog-post { padding: 60px 0 80px; }
