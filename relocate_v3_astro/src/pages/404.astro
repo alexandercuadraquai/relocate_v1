@@ -1,0 +1,44 @@
+---
+// Static hosts that serve a dist/404.html file (Cloudflare Pages, Netlify, etc.)
+// use this page as a REAL 404 response for any unmatched route, instead of
+// silently falling back to serving the homepage with a 200 status ("soft 404").
+// See docs/ai-seo-audit-2026-08.md follow-up: GSC flagged a soft-404 issue
+// because this file did not exist.
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Page Not Found | Relocate to Panama"
+  description="This page doesn't exist. Return to the Relocate to Panama homepage to explore visas, corporations, and relocation guides."
+  lang="en"
+  noindex={true}
+>
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="/" class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+      <div class="nav-links">
+        <a href="/" class="nav-cta">Back to Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 24px;">
+    <div class="container" style="max-width: 600px;">
+      <div style="font-size: 5rem; margin-bottom: 24px;">🧭</div>
+      <h1 style="font-size: 3rem; margin-bottom: 24px; color: var(--text-dark);">404 — Page Not Found</h1>
+      <p style="font-size: 1.25rem; color: var(--text-body); margin-bottom: 40px;">
+        The page you're looking for doesn't exist or may have moved. Let's get you back on track.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="/" class="btn btn-primary">Go to Homepage</a>
+        <a href="/es/" class="btn btn-outline">Ir al Sitio en Español</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="text-align: center;">
+      <p>© 2026 RelocatePanama. All rights reserved.</p>
+    </div>
+  </footer>
+</Layout>

@@ -99,4 +99,4 @@ El procesamiento generalmente toma de 3 a 6 meses desde la presentación, depend
 
 ## ¿Listo para Solicitar tu Visa de Naciones Amigas?
 
-Nuestro equipo ha procesado solicitudes de Visa de Naciones Amigas para clientes de docenas de países durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es#contact) para confirmar tu elegibilidad y obtener tu cotización exacta, o lee nuestra guía completa en la [página del programa de Visa de Naciones Amigas](/es/visas/friendly-nations-visa) para conocer los requisitos oficiales y la lista de beneficios.
+Nuestro equipo ha procesado solicitudes de Visa de Naciones Amigas para clientes de docenas de países durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es/#contact) para confirmar tu elegibilidad y obtener tu cotización exacta, o lee nuestra guía completa en la [página del programa de Visa de Naciones Amigas](/es/visas/friendly-nations-visa/) para conocer los requisitos oficiales y la lista de beneficios.

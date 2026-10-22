@@ -99,4 +99,4 @@ Processing typically takes 3 to 6 months from filing, depending on document read
 
 ## Ready to Apply for Your Friendly Nations Visa?
 
-Our team has processed Friendly Nations Visa applications for clients from dozens of countries over 20+ years. [Book a free 15-minute consultation](/#contact) to confirm your eligibility and get your exact fee quote, or read our full guide to the [Friendly Nations Visa program page](/visas/friendly-nations-visa) for the official requirements and benefits list.
+Our team has processed Friendly Nations Visa applications for clients from dozens of countries over 20+ years. [Book a free 15-minute consultation](/#contact) to confirm your eligibility and get your exact fee quote, or read our full guide to the [Friendly Nations Visa program page](/visas/friendly-nations-visa/) for the official requirements and benefits list.

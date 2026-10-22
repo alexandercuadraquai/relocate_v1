@@ -27,10 +27,10 @@ const { lang, topicKey, slug, image, imagePosition = 'center center' } = Astro.p
 const t = translations[lang] as any;
 const home = lang === 'es' ? '/es' : '';
 const segment = lang === 'es' ? 'por-que-panama' : 'why-panama';
-const canonical = `https://relocatepa.com${home}/${segment}/${slug}`;
-const altHref = lang === 'es' ? `/why-panama/${slug}` : `/es/por-que-panama/${slug}`;
-const enHref = `https://relocatepa.com/why-panama/${slug}`;
-const esHref = `https://relocatepa.com/es/por-que-panama/${slug}`;
+const canonical = `https://relocatepa.com${home}/${segment}/${slug}/`;
+const altHref = lang === 'es' ? `/why-panama/${slug}/` : `/es/por-que-panama/${slug}/`;
+const enHref = `https://relocatepa.com/why-panama/${slug}/`;
+const esHref = `https://relocatepa.com/es/por-que-panama/${slug}/`;
 const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
 
 const w = (key: string) => t[`why_${topicKey}_${key}`];
@@ -64,7 +64,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home || '/'}` },
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home ? `${home}/` : '/'}` },
     { "@type": "ListItem", "position": 2, "name": t.svc_breadcrumb_why, "item": `https://relocatepa.com${home}/#why-panama` },
     { "@type": "ListItem", "position": 3, "name": title, "item": canonical }
   ]
@@ -83,7 +83,7 @@ const breadcrumbSchema = {
     <section class="service-hero">
       <div class="container">
         <p class="breadcrumb">
-          <a href={home || '/'}>{t.svc_breadcrumb_home}</a> ›
+          <a href={home ? `${home}/` : '/'}>{t.svc_breadcrumb_home}</a> ›
           <a href={`${home}/#why-panama`}>{t.svc_breadcrumb_why}</a> ›
           <span>{title}</span>
         </p>
@@ -146,10 +146,10 @@ const breadcrumbSchema = {
           <h3>{t.why_related_title}</h3>
           <div class="related-visas-links">
             {ALL_TOPICS.filter(k => k !== topicKey).map(k => (
-              <a href={`${home}/${segment}/${TOPIC_SLUGS[k]}`} class="btn btn-outline">{t[`why_${k}_title`]}</a>
+              <a href={`${home}/${segment}/${TOPIC_SLUGS[k]}/`} class="btn btn-outline">{t[`why_${k}_title`]}</a>
             ))}
           </div>
-          <a href={home || '/'} class="back-home-link">{t.svc_back_home}</a>
+          <a href={home ? `${home}/` : '/'} class="back-home-link">{t.svc_back_home}</a>
         </div>
       </div>
     </section>

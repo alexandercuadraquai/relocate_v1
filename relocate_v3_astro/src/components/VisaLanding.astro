@@ -26,10 +26,10 @@ const VISA_SLUGS: Record<string, string> = {
 const { lang, visaKey, slug } = Astro.props;
 const t = translations[lang] as any;
 const home = lang === 'es' ? '/es' : '';
-const canonical = `https://relocatepa.com${home}/visas/${slug}`;
-const altHref = lang === 'es' ? `/visas/${slug}` : `/es/visas/${slug}`;
-const enHref = `https://relocatepa.com/visas/${slug}`;
-const esHref = `https://relocatepa.com/es/visas/${slug}`;
+const canonical = `https://relocatepa.com${home}/visas/${slug}/`;
+const altHref = lang === 'es' ? `/visas/${slug}/` : `/es/visas/${slug}/`;
+const enHref = `https://relocatepa.com/visas/${slug}/`;
+const esHref = `https://relocatepa.com/es/visas/${slug}/`;
 const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
 
 const v = (key: string) => t[`${visaKey}_${key}`];
@@ -74,7 +74,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home || '/'}` },
+    { "@type": "ListItem", "position": 1, "name": t.svc_breadcrumb_home, "item": `https://relocatepa.com${home ? `${home}/` : '/'}` },
     { "@type": "ListItem", "position": 2, "name": t.svc_breadcrumb_visas, "item": `https://relocatepa.com${home}/#visa-programs` },
     { "@type": "ListItem", "position": 3, "name": name, "item": canonical }
   ]
@@ -93,7 +93,7 @@ const breadcrumbSchema = {
     <section class="service-hero">
       <div class="container">
         <p class="breadcrumb">
-          <a href={home || '/'}>{t.svc_breadcrumb_home}</a> ›
+          <a href={home ? `${home}/` : '/'}>{t.svc_breadcrumb_home}</a> ›
           <a href={`${home}/#visa-programs`}>{t.svc_breadcrumb_visas}</a> ›
           <span>{name}</span>
         </p>
@@ -213,10 +213,10 @@ const breadcrumbSchema = {
           <h3>{t.svc_related_title}</h3>
           <div class="related-visas-links">
             {ALL_VISAS.filter(k => k !== visaKey).map(k => (
-              <a href={`${home}/visas/${VISA_SLUGS[k]}`} class="btn btn-outline">{t[`${k}_name`]}</a>
+              <a href={`${home}/visas/${VISA_SLUGS[k]}/`} class="btn btn-outline">{t[`${k}_name`]}</a>
             ))}
           </div>
-          <a href={home || '/'} class="back-home-link">{t.svc_back_home}</a>
+          <a href={home ? `${home}/` : '/'} class="back-home-link">{t.svc_back_home}</a>
         </div>
       </div>
     </section>

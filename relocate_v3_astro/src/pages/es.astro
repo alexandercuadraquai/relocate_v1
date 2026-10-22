@@ -5,24 +5,24 @@ import { translations } from '../i18n/translations';
 const lang = 'es';
 const t = translations[lang];
 const waLink = `https://wa.me/50766743696?text=${t.wa_text}`;
-const canonical = `https://relocatepa.com/es`;
+const canonical = `https://relocatepa.com/es/`;
 ---
 
 <Layout title={t.meta_title} description={t.meta_description} lang={lang} canonical={canonical}>
 
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="/es#hero" class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="nav-logo-img"></a>
+      <a href="/es/#hero" class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="nav-logo-img"></a>
       <div class="nav-links" id="navLinks">
-        <a href="/es#why-panama" data-i18n="nav_why">{t.nav_why}</a>
-        <a href="/es#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
-        <a href="/es#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
-        <a href="/es#services" data-i18n="nav_services">{t.nav_services}</a>
-        <a href="/es/blog" data-i18n="nav_blog">{t.nav_blog}</a>
-        <a href="/es#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
+        <a href="/es/#why-panama" data-i18n="nav_why">{t.nav_why}</a>
+        <a href="/es/#corporations" data-i18n="nav_corp">{t.nav_corp}</a>
+        <a href="/es/#visa-programs" data-i18n="nav_visa">{t.nav_visa}</a>
+        <a href="/es/#services" data-i18n="nav_services">{t.nav_services}</a>
+        <a href="/es/blog/" data-i18n="nav_blog">{t.nav_blog}</a>
+        <a href="/es/#contact" class="nav-cta" data-i18n="nav_contact">{t.nav_contact}</a>
         <div class="lang-toggle">
           <a href="/" class="lang-btn">EN</a>
-          <a href="/es" class="lang-btn active">ES</a>
+          <a href="/es/" class="lang-btn active">ES</a>
         </div>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -44,8 +44,8 @@ const canonical = `https://relocatepa.com/es`;
       </h1>
       <p class="hero-subtitle" data-i18n="hero_subtitle">{t.hero_subtitle}</p>
       <div class="hero-buttons">
-        <a href="/es#visa-programs" class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
-        <a href="/es#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
+        <a href="/es/#visa-programs" class="btn btn-primary" data-i18n="hero_btn_visa">{t.hero_btn_visa}</a>
+        <a href="/es/#why-panama" class="btn btn-outline" data-i18n="hero_btn_why">{t.hero_btn_why}</a>
       </div>
       <p class="trust-phrase" data-i18n="trust_phrase">{t.trust_phrase}</p>
     </div>
@@ -64,7 +64,7 @@ const canonical = `https://relocatepa.com/es`;
           <div class="feature-card-body">
             <h3 data-i18n="why_climate_title">{t.why_climate_title}</h3>
             <p data-i18n="why_climate_desc">{t.why_climate_desc}</p>
-            <a href="/es/por-que-panama/perfect-climate" class="btn btn-outline">{t.svc_learn_more}</a>
+            <a href="/es/por-que-panama/perfect-climate/" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -74,7 +74,7 @@ const canonical = `https://relocatepa.com/es`;
           <div class="feature-card-body">
             <h3 data-i18n="why_economy_title">{t.why_economy_title}</h3>
             <p data-i18n="why_economy_desc">{t.why_economy_desc}</p>
-            <a href="/es/por-que-panama/booming-economy" class="btn btn-outline">{t.svc_learn_more}</a>
+            <a href="/es/por-que-panama/booming-economy/" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -84,7 +84,7 @@ const canonical = `https://relocatepa.com/es`;
           <div class="feature-card-body">
             <h3 data-i18n="why_location_title">{t.why_location_title}</h3>
             <p data-i18n="why_location_desc">{t.why_location_desc}</p>
-            <a href="/es/por-que-panama/strategic-location" class="btn btn-outline">{t.svc_learn_more}</a>
+            <a href="/es/por-que-panama/strategic-location/" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
         <div class="feature-card animate-on-scroll">
@@ -94,7 +94,7 @@ const canonical = `https://relocatepa.com/es`;
           <div class="feature-card-body">
             <h3 data-i18n="why_living_title">{t.why_living_title}</h3>
             <p data-i18n="why_living_desc">{t.why_living_desc}</p>
-            <a href="/es/por-que-panama/world-class-living" class="btn btn-outline">{t.svc_learn_more}</a>
+            <a href="/es/por-que-panama/world-class-living/" class="btn btn-outline">{t.svc_learn_more}</a>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@ const canonical = `https://relocatepa.com/es`;
           <p>{t.hiw3_desc}</p>
         </div>
       </div>
-      <a href="/es#contact" class="btn btn-primary animate-on-scroll">{t.hiw_cta}</a>
+      <a href="/es/#contact" class="btn btn-primary animate-on-scroll">{t.hiw_cta}</a>
     </div>
   </section>
 
@@ -167,7 +167,7 @@ const canonical = `https://relocatepa.com/es`;
                 <p data-i18n="corp_ben5_desc">{t.corp_ben5_desc}</p>
               </div>
             </div>
-            <a href="/es/servicios/panama-corporations-foundations" class="btn btn-outline" style="display: block; width: max-content; margin: 24px auto 0;">{t.svc_learn_more}</a>
+            <a href="/es/servicios/panama-corporations-foundations/" class="btn btn-outline" style="display: block; width: max-content; margin: 24px auto 0;">{t.svc_learn_more}</a>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@ const canonical = `https://relocatepa.com/es`;
               <li data-i18n="visa1_ben4">{t.visa1_ben4}</li>
               <li data-i18n="visa1_ben5">{t.visa1_ben5}</li>
             </ul>
-            <a href="/es/visas/pensionado-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
+            <a href="/es/visas/pensionado-visa/" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -228,7 +228,7 @@ const canonical = `https://relocatepa.com/es`;
               <li data-i18n="visa2_ben4">{t.visa2_ben4}</li>
               <li data-i18n="visa2_ben5">{t.visa2_ben5}</li>
             </ul>
-            <a href="/es/visas/friendly-nations-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
+            <a href="/es/visas/friendly-nations-visa/" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -254,7 +254,7 @@ const canonical = `https://relocatepa.com/es`;
               <li data-i18n="visa3_ben4">{t.visa3_ben4}</li>
               <li data-i18n="visa3_ben5">{t.visa3_ben5}</li>
             </ul>
-            <a href="/es/visas/qualified-investor-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
+            <a href="/es/visas/qualified-investor-visa/" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -280,7 +280,7 @@ const canonical = `https://relocatepa.com/es`;
               <li data-i18n="visa4_ben4">{t.visa4_ben4}</li>
               <li data-i18n="visa4_ben5">{t.visa4_ben5}</li>
             </ul>
-            <a href="/es/visas/self-economic-solvency-visa" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
+            <a href="/es/visas/self-economic-solvency-visa/" class="btn btn-outline" style="width: 100%;">{t.svc_learn_more}</a>
           </div>
         </div>
 
@@ -512,9 +512,9 @@ const canonical = `https://relocatepa.com/es`;
         <div class="related-reading animate-on-scroll" style="margin-top: 48px; text-align: center;">
           <h3 style="margin-bottom: 16px;">Lecturas Relacionadas</h3>
           <div class="related-visas-links">
-            <a href="/es/blog/friendly-nations-visa-guide-2026" class="btn btn-outline">Visa de Naciones Amigas 2026: Guía Completa</a>
-            <a href="/es/blog/pensionado-visa-panama-guide" class="btn btn-outline">Visa de Pensionado: Requisitos, Costo y Proceso</a>
-            <a href="/es/blog/cost-of-living-panama-city-2026" class="btn btn-outline">Costo de Vida en Ciudad de Panamá 2026</a>
+            <a href="/es/blog/friendly-nations-visa-guide-2026/" class="btn btn-outline">Visa de Naciones Amigas 2026: Guía Completa</a>
+            <a href="/es/blog/pensionado-visa-panama-guide/" class="btn btn-outline">Visa de Pensionado: Requisitos, Costo y Proceso</a>
+            <a href="/es/blog/cost-of-living-panama-city-2026/" class="btn btn-outline">Costo de Vida en Ciudad de Panamá 2026</a>
           </div>
         </div>
 
@@ -593,16 +593,16 @@ const canonical = `https://relocatepa.com/es`;
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="/es#hero" class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="footer-logo-img"></a>
+          <a href="/es/#hero" class="nav-logo"><img src="/images/relocatepa_new_logo-removebg-preview.png" alt="Relocate to Panama" class="footer-logo-img"></a>
           <p data-i18n="footer_tagline">{t.footer_tagline}</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_nav">{t.footer_nav}</h4>
-          <a href="/es#why-panama">{t.nav_why}</a>
-          <a href="/es#visa-programs">{t.nav_visa}</a>
-          <a href="/es#legal">{t.nav_legal}</a>
-          <a href="/es#services">{t.nav_services}</a>
-          <a href="/es/blog">{t.nav_blog}</a>
+          <a href="/es/#why-panama">{t.nav_why}</a>
+          <a href="/es/#visa-programs">{t.nav_visa}</a>
+          <a href="/es/#legal">{t.nav_legal}</a>
+          <a href="/es/#services">{t.nav_services}</a>
+          <a href="/es/blog/">{t.nav_blog}</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_contact">{t.footer_contact}</h4>

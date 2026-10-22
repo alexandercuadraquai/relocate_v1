@@ -7,15 +7,15 @@ import { getCollection } from 'astro:content';
 
 const lang = 'en' as const;
 const t = translations[lang];
-const canonical = 'https://relocatepa.com/blog';
+const canonical = 'https://relocatepa.com/blog/';
 
 const allPosts = await getCollection('blog', ({ data }) => data.lang === 'en');
 const posts = allPosts.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
-<Layout title={t.blog_page_title} description={t.blog_page_desc} lang={lang} canonical={canonical} enHref={canonical} esHref="https://relocatepa.com/es/blog">
+<Layout title={t.blog_page_title} description={t.blog_page_desc} lang={lang} canonical={canonical} enHref={canonical} esHref="https://relocatepa.com/es/blog/">
 
-  <ServiceNav lang={lang} altHref="/es/blog" />
+  <ServiceNav lang={lang} altHref="/es/blog/" />
 
   <main>
     <section class="service-hero">
@@ -35,7 +35,7 @@ const posts = allPosts.sort((a, b) => b.data.publishDate.valueOf() - a.data.publ
               </div>
               <div class="visa-card-body">
                 <p>{post.data.excerpt}</p>
-                <a href={`/blog/${post.data.slug}`} class="btn btn-outline" style="width: 100%;">{t.blog_read_more}</a>
+                <a href={`/blog/${post.data.slug}/`} class="btn btn-outline" style="width: 100%;">{t.blog_read_more}</a>
               </div>
             </div>
           ))}

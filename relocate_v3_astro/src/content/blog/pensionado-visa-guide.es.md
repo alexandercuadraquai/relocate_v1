@@ -89,4 +89,4 @@ Los honorarios legales comienzan desde $1,500, más las tasas gubernamentales qu
 
 ## ¿Listo para Jubilarte en Panamá?
 
-Nuestro equipo ha guiado a jubilados de Estados Unidos, Canadá y Europa a través del proceso de la Visa de Pensionado durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es#contact) para confirmar tu elegibilidad, o visita la [página del programa de Visa de Pensionado](/es/visas/pensionado-visa) para conocer los requisitos oficiales y el resumen de beneficios.
+Nuestro equipo ha guiado a jubilados de Estados Unidos, Canadá y Europa a través del proceso de la Visa de Pensionado durante más de 20 años. [Reserva una consulta gratuita de 15 minutos](/es/#contact) para confirmar tu elegibilidad, o visita la [página del programa de Visa de Pensionado](/es/visas/pensionado-visa/) para conocer los requisitos oficiales y el resumen de beneficios.
