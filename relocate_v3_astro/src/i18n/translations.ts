@@ -8,7 +8,7 @@ export const translations = {
 
     hero_label: "YOUR NEW LIFE AWAITS",
     hero_title_1: "Relocate to", hero_title_2: "Panama",
-    hero_subtitle: "**Discover why thousands of retirees, investors, and entrepreneurs choose Panama as their new home — with world-class incentives, tropical beauty, and a booming economy.**",
+    hero_subtitle: "Discover why thousands of retirees, investors, and entrepreneurs choose Panama as their new home — with world-class incentives, tropical beauty, and a booming economy.",
     hero_btn_visa: "Explore Visa Options", hero_btn_why: "Why Panama?",
 
     why_label: "DISCOVER PARADISE", why_title: "Why Panama?",
